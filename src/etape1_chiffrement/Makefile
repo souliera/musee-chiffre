@@ -7,6 +7,8 @@ all:
 	g++ -o decryptBlockPGM.out decryptBlockPGM.cpp -Wall -Wextra -g
 	g++ -o encryptBlock.out encryptBlock.cpp -Wall -Wextra -g
 	g++ -o decryptBlock.out decryptBlock.cpp -Wall -Wextra -g
+	g++ -o encryptBlockAverage.out encryptBlockAverage.cpp -Wall -Wextra -g
+	g++ -o decryptBlockAverage.out decryptBlockAverage.cpp -Wall -Wextra -g
 
 clean:
 	rm -f *.o
