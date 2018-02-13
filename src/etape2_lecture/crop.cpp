@@ -17,34 +17,29 @@ int main(int argc, char *argv[]) {
     OCTET* imgIn;
     OCTET* imgOut;
 
-    lire_nb_lignes_colonnes_image_ppm(argv[1], &height, &width);
+    lire_nb_lignes_colonnes_image_pgm(argv[1], &height, &width);
     int size = height * width;
-    int size3 = size * 3;
 
-    allocation_tableau(imgIn, OCTET, size3);
-    lire_image_ppm(argv[1], imgIn, size);
-    allocation_tableau(imgOut, OCTET, size3);
+    allocation_tableau(imgIn, OCTET, size);
+    lire_image_pgm(argv[1], imgIn, size);
+    allocation_tableau(imgOut, OCTET, size);
 
     int seuil = atoi(argv[3]);
 
-    int up, left = width;
-    int down, right = 0;
-    int newUp, newLeft = width;
-    int newDown, newRight = 0;
+    int up = width;
+    int left = width;
+    int down = 0;
+    int right = 0;
+    int newUp = width;
+    int newLeft = width;
+    int newDown = 0;
+    int newRight = 0;
 
     // limite left
     for(int i = 0; i < height; i++) {
         for(int j = 0; j < width-1; j++) {
             newLeft = width;
-            if(abs(imgIn[(i*3) * width + (j*3) + 0] - imgIn[(i*3) * width + ((j+1)*3) + 0]) > seuil) {
-                newLeft = j;
-                break;
-            }
-            if(abs(imgIn[(i*3) * width + (j*3) + 1] - imgIn[(i*3) * width + ((j+1)*3) + 1]) > seuil) {
-                newLeft = j;
-                break;
-            }
-            if(abs(imgIn[(i*3) * width + (j*3) + 2] - imgIn[(i*3) * width + ((j+1)*3) + 2]) > seuil) {
+            if(abs(imgIn[i*width+j] - imgIn[i*width+(j+1)]) > seuil) {
                 newLeft = j;
                 break;
             }
@@ -55,21 +50,13 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    cout << left << endl;
+    cout << "left : " << left << endl;
 
     // limite right
     for(int i = 0; i < height; i++) {
         for(int j = width-1; j > 0; j--) {
             newRight = 0;
-            if(abs(imgIn[(i*3) * width + (j*3) + 0] - imgIn[(i*3) * width + ((j-1)*3) + 0]) > seuil) {
-                newRight = j;
-                break;
-            }
-            if(abs(imgIn[(i*3) * width + (j*3) + 1] - imgIn[(i*3) * width + ((j-1)*3) + 1]) > seuil) {
-                newRight = j;
-                break;
-            }
-            if(abs(imgIn[(i*3) * width + (j*3) + 2] - imgIn[(i*3) * width + ((j-1)*3) + 2]) > seuil) {
+            if(abs(imgIn[i*width+j] - imgIn[i*width+(j-1)]) > seuil) {
                 newRight = j;
                 break;
             }
@@ -80,22 +67,14 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    cout << right << endl;
+    cout << "right : " << right << endl;
 
     // limite up
     for(int i = 0; i < height-1; i++) {
         for(int j = 0; j < width; j++) {
-            newUp = width;
-            if(abs(imgIn[(i*3) * width + (j*3) + 0] - imgIn[((i+1)*3) * width + (j*3) + 0]) > seuil) {
-                newUp = j;
-                break;
-            }
-            if(abs(imgIn[(i*3) * width + (j*3) + 1] - imgIn[((i+1)*3) * width + (j*3) + 1]) > seuil) {
-                newUp = j;
-                break;
-            }
-            if(abs(imgIn[(i*3) * width + (j*3) + 2] - imgIn[((i+1)*3) * width + (j*3) + 2]) > seuil) {
-                newUp = j;
+            newUp = height;
+            if(abs(imgIn[i*width+j] - imgIn[(i+1)*width+j]) > seuil) {
+                newUp = i;
                 break;
             }
         }
@@ -105,23 +84,41 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    cout << up << endl;
+    cout << "up : " << up << endl;
+
+    // limite down
+    for(int i = height-1; i > 0; i--) {
+        for(int j = 0; j < width; j++) {
+            newDown = 0;
+            if(abs(imgIn[i*width+j] - imgIn[(i-1)*width+j]) > seuil) {
+                cout << i << " " << j << endl;
+                newDown = i;
+                break;
+            }
+        }
+
+        if(newDown > down) {
+            down = newDown;
+        }
+    }
+
+    cout << "down : " << down << endl;
 
     for(int i = 0; i < height; i++) {
         for(int j = 0; j < width; j++) {
-            if(left <= j && j <= right) {
-                imgOut[(i*3) * width + (j*3) + 0] = imgIn[(i*3) * width + (j*3) + 0];
-                imgOut[(i*3) * width + (j*3) + 1] = imgIn[(i*3) * width + (j*3) + 1];
-                imgOut[(i*3) * width + (j*3) + 2] = imgIn[(i*3) * width + (j*3) + 2];
+            if(left < j && j < right && up < i && i < down) {
+                imgOut[(i) * width + (j) ] = imgIn[(i) * width + (j) ];
+                imgOut[(i) * width + (j) ] = imgIn[(i) * width + (j) ];
+                imgOut[(i) * width + (j) ] = imgIn[(i) * width + (j) ];
             } else {
-                imgOut[(i*3) * width + (j*3) + 0] = 0;
-                imgOut[(i*3) * width + (j*3) + 1] = 0;
-                imgOut[(i*3) * width + (j*3) + 2] = 0;
+                imgOut[(i) * width + (j) ] = 0;
+                imgOut[(i) * width + (j) ] = 0;
+                imgOut[(i) * width + (j) ] = 0;
             }
         }
     }
 
-    ecrire_image_ppm(argv[2], imgOut,  height, width);
+    ecrire_image_pgm(argv[2], imgOut,  height, width);
 
     delete imgOut;
     delete imgIn;
