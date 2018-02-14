@@ -18,16 +18,20 @@ int main(int argc, char *argv[]) {
     OCTET* imgIn;
     OCTET* imgOut;
 
+    // recuperation des dimensions de l'image
     lire_nb_lignes_colonnes_image_ppm(argv[1], &height, &width);
     int size = height * width;
     int size3 = size * 3;
 
+    // creation des tableaux de donnees
     allocation_tableau(imgIn, OCTET, size3);
     lire_image_ppm(argv[1], imgIn, size);
     allocation_tableau(imgOut, OCTET, size3);
 
+    // initialisation du generateur pseudo-aleatoire
     srand(atoi(argv[4]));
 
+    // vecteur pour tirer les nouveaux indices
     vector<int> index;
     for(int i = 0; i < size; i++) {
         index.push_back(i);
@@ -36,14 +40,18 @@ int main(int argc, char *argv[]) {
     int n = 0;
 
     for(int i = 0; i < size; i++) {
+        // tirage d'un nouvel indice de bloc aleatoire
         int r = rand() % (size - n);
         int newIndex = index[r];
 
+        // melange
         imgOut[newIndex*3+0] = imgIn[i*3+0];
         imgOut[newIndex*3+1] = imgIn[i*3+1];
         imgOut[newIndex*3+2] = imgIn[i*3+2];
 
+        // suppression de l'indice choisi dans le tableau
         index.erase(index.begin()+r);
+        // reduction de la limite aleatoire
         n++;
     }
 

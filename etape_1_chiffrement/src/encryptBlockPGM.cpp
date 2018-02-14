@@ -18,21 +18,25 @@ int main(int argc, char *argv[]) {
     OCTET* imgIn;
     OCTET* imgOut;
 
+    // recuperation des dimensions de l'image
     lire_nb_lignes_colonnes_image_pgm(argv[1], &height, &width);
     int size = height * width;
-    int size3 = size * 3;
 
-    allocation_tableau(imgIn, OCTET, size3);
+    // creation des tableaux de donnees
+    allocation_tableau(imgIn, OCTET, size);
     lire_image_pgm(argv[1], imgIn, size);
-    allocation_tableau(imgOut, OCTET, size3);
+    allocation_tableau(imgOut, OCTET, size);
 
+    // initialisation des paramettres des blocs
     int nbBlockWidth = atoi(argv[3]);
     int nbBlock = nbBlockWidth*nbBlockWidth;
     int widthBlock = width/nbBlockWidth;
     int sizeBlock = widthBlock*widthBlock;
 
+    // initialisation du generateur pseudo-aleatoire
     srand(atoi(argv[4]));
 
+    // vecteur pour tirer les nouveaux indices
     vector<int> index;
     for(int i = 0; i < nbBlock; i++) {
         index.push_back(i);
@@ -45,9 +49,11 @@ int main(int argc, char *argv[]) {
     int newIndex, oldIndex;
 
     for(int i = 0; i < nbBlock; i++) {
+        // tirage d'un nouvel indice de bloc aleatoire
         r = rand() % (nbBlock - n);
         newBlockIndex = index[r];
 
+        // calcul de l'indice du premier pixel du bloc et du son nouvel indice
         if(i == 0) {
             oldIndexFirst = 0;
         } else {
@@ -59,16 +65,21 @@ int main(int argc, char *argv[]) {
             newIndexFirst = (newBlockIndex - (newBlockIndex % nbBlockWidth)) * sizeBlock + ((newBlockIndex % nbBlockWidth) * widthBlock);
         }
 
+        // boucle pour chaque pixel du bloc
         for(int x = 0; x < widthBlock; x++) {
             for(int y = 0; y < widthBlock; y++) {
+                // calcul du nouvel indice du pixel dans le bloc
                 newIndex = newIndexFirst + x + (y * width);
                 oldIndex = oldIndexFirst + x + (y * width);
 
+                // melange
                 imgOut[newIndex] = imgIn[oldIndex];
             }
         }
 
+        // suppression de l'indice choisi dans le tableau
         index.erase(index.begin()+r);
+        // reduction de la limite aleatoire
         n++;
     }
 
