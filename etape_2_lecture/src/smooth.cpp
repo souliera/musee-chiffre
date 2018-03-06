@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     if(argc != 3) {
-        cout << "Usage: " << argv[0] << " <encryptImg> <decryptImg>" << endl;
+        cout << "Usage: " << argv[0] << " <grayScaleImg> <smoothImg>" << endl;
         exit(EXIT_FAILURE);
     }
 
@@ -30,47 +30,33 @@ int main(int argc, char *argv[]) {
 
     for(int i = 0; i < height; i++) {
         for(int j = 0; j < width; j++) {
-            if(imgIn[i*width+j] > 127) {
-                imgOut[i*width+j] = 255;
-            } else {
-                imgOut[i*width+j] = 0;
+            n = 1;
+            int sum = imgIn[i*width+j];
+            if(i != 0) {
+                sum += imgIn[(i-1)*width+j];
+                n++;
             }
-            // n = 1;
-            // int sum = imgIn[i*width+j];
-            // if(i != 0) {
-            //     sum += imgIn[(i-1)*width+j];
-            //     n++;
-            // }
-            //
-            // if(i != height-1) {
-            //     sum += imgIn[(i+1)*width+j];
-            //     n++;
-            // }
-            //
-            // if(j != 0) {
-            //     sum += imgIn[i*width+(j-1)];
-            //     n++;
-            // }
-            //
-            // if(j != width-1) {
-            //     sum += imgIn[i*width+(j+1)];
-            //     n++;
-            // }
-            //
-            // imgOut[i*width+j] = sum / n;
+
+            if(i != height-1) {
+                sum += imgIn[(i+1)*width+j];
+                n++;
+            }
+
+            if(j != 0) {
+                sum += imgIn[i*width+(j-1)];
+                n++;
+            }
+
+            if(j != width-1) {
+                sum += imgIn[i*width+(j+1)];
+                n++;
+            }
+
+            imgOut[i*width+j] = sum / n;
         }
     }
 
     ecrire_image_pgm(argv[2], imgOut,  height, width);
-
-    cout << "\t" << imgIn[0*width+1] / 1 << endl;
-    cout << imgIn[1*width+0] / 1 << "\t" << imgIn[1*width+1] / 1 << "\t" << imgIn[1*width+2] / 1 << endl;
-    cout << "\t" << imgIn[2*width+1] / 1 << endl;
-
-    cout << endl;
-
-    cout << imgOut[1*width+1] << endl;
-    cout << imgOut[1*width+1] / 5 << endl;
 
     delete imgOut;
     delete imgIn;

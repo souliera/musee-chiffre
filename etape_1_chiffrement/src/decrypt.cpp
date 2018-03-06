@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <vector>
+#include <ctime>
 
 #include "image_ppm.h"
 
@@ -11,6 +12,8 @@ int main(int argc, char *argv[]) {
         cout << "Usage: " << argv[0] << " <encryptImg> <decryptImg> <nbBlock> <encryptKey>" << endl;
         exit(EXIT_FAILURE);
     }
+
+    clock_t begin1 = clock();
 
     int height = 0;
     int width = 0;
@@ -39,6 +42,8 @@ int main(int argc, char *argv[]) {
 
     int n = 0;
 
+    clock_t begin2 = clock();
+
     for(int i = 0; i < size; i++) {
         // tirage d'un nouvel indice aleatoire
         int r = rand() % (size - n);
@@ -55,10 +60,17 @@ int main(int argc, char *argv[]) {
         n++;
     }
 
+    clock_t end2 = clock();
+
     ecrire_image_ppm(argv[2], imgOut,  height, width);
 
     delete imgOut;
     delete imgIn;
+
+    clock_t end1 = clock();
+
+    cout << "Computing time : " << ((float)(end2-begin2))/ CLOCKS_PER_SEC << endl;
+    cout << "Total time : " << ((float)(end1-begin1))/ CLOCKS_PER_SEC << endl;
 
     return 0;
 }
