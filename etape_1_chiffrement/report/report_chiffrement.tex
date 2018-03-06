@@ -18,14 +18,14 @@
 
     \newpage
 
-    \section{Algorithme de chiffrement par permutation pseudo aléatoire}
+    \section{Algorithme de chiffrement par permutation pseudo-aléatoire}
 
-        L'algorithme utilisé ici (cf. algorithme \ref{algo:cipher}) effectue un mélange pseudo aléatoire sur les positions des pixels de l'image. Avant tout, un générateur de nombres pseudo-aléatoires est initialisé avec une seed passer en paramètre du programme et un tableau d'indice est créé. Chaque case de ce tableau contient un nombre dans l'ordre entre 0 et le nombre de pixels de l'image moins un. A partir de là, chaque nouvelle attribution de position se fait en quatre étapes.
+        L'algorithme utilisé ici (cf. algorithme \ref{algo:cipher}) effectue un mélange pseudo-aléatoire sur les positions des pixels de l'image. Avant tout, un générateur de nombres pseudo-aléatoires est initialisé avec une seed passé en paramètre du programme et un tableau d'indice est créé. Chaque case de ce tableau contient un nombre dans l'ordre entre 0 et le nombre de pixels de l'image moins un. À partir de là, chaque nouvelle attribution de position se fait en quatre étapes.
         \begin{itemize}
             \item Un nombre $r$ est tiré par le générateur pseudo-aléatoire entre 0 et la taille du tableau d'indice.
-            \item Le nouvel indince $k$ du pixel est pris dans le tableau à l'indice $r$.
+            \item Le nouvel indice $k$ du pixel est pris dans le tableau à l'indice $r$.
             \item Les données du pixel de l'image sont copiées dans une nouvelle image à l'indice défini précédement.
-            \item La case d'indice $r$ du tableau d'indice est supprimé et les cases suivantes sont réindexées.
+            \item La case d'indice $r$ du tableau d'indice est supprimée et les cases suivantes sont réindexées.
         \end{itemize}
 
         \begin{algorithm}[htbp]
@@ -45,7 +45,7 @@
 
                 index[r].remove()\;
             }
-            \caption{Algorithme de chiffrement par permutation pseudo aléatoire d'une image couleur}
+            \caption{Algorithme de chiffrement par permutation pseudo-aléatoire d'une image couleur}
             \label{algo:cipher}
         \end{algorithm}
 
@@ -62,18 +62,18 @@
                 \subfloat[Itération 3]{
                     \includegraphics[width=0.3\textwidth]{rsc/index1_3.png}
                     \label{subfig:index1_3}}
-                \caption{Choix pseudo aléatoire des nouveaux indices des pixels}
+                \caption{Choix pseudo-aléatoire des nouveaux indices des pixels}
                 \label{fig:cipher}
             \end{center}
         \end{figure}
 
-        Pour la première (cf. figure \ref{fig:cipher}\subref{subfig:index1_1}), le chiffre 2 est tiré par le générateur. Le nouvel indice du premier pixel de l'image sera donc 2. On supprime ensuite la $3^{ere}$ case du tableau d'indice (les indices commencent  à 0) et on recommence l'opération.
+        Pour la première (cf. figure \ref{fig:cipher}\subref{subfig:index1_1}), le chiffre 2 est tiré par le générateur. Le nouvel indice du premier pixel de l'image sera donc 2. On supprime ensuite la $3^{eme}$ case du tableau d'indice (les indices commencent  à 0) et on recommence l'opération.
         Pour la deuxième itération (cf. figure \ref{fig:cipher}\subref{subfig:index1_2}), le chiffre 3 est tiré. La case d'indice 3 du taleau d'indice n'ayant plus la valeur 3 mais 4. Le deuxième pixel de l'image sera donc en case 5 de la nouvelle image.
         Pour ce qui est de la troisième itération (cf. figure \ref{fig:cipher}\subref{subfig:index1_3}), le chiffre 2 sort à nouveau. Cette fois ci, la troisième case du tableau d'indice contient la valeur 3. Le troisième pixel de l'image sera donc en position 4.
 
-    \section{Algorithme de déchiffrement par permutation pseudo aléatoire}
+    \section{Algorithme de déchiffrement par permutation pseudo-aléatoire}
 
-        L'algorithme de déchiffrement (cf. algorithme \ref{algo:decipher}) se base sur le même principe que celui de chiffrement. La différence repose sur l'ordre de parcours des tableaux. L'algorithme de chiffrement parcours dans l'ordre le l'image d'entrée et dans le désordre l'image de sortie alors que l'algorithme de déchiffrement les parcours dans l'ordre. L'image original est lu dans l'ordre et l'image déchiffrée est écrite dans l'ordre.
+        L'algorithme de déchiffrement (cf. algorithme \ref{algo:decipher}) se base sur le même principe que celui de chiffrement. La différence repose sur l'ordre de parcours des tableaux. L'algorithme de chiffrement parcours dans l'ordre l'image d'entrée et dans le désordre l'image de sortie alors que l'algorithme de déchiffrement fait l'inverse. L'image chiffré est lu dans le désordre et l'image déchiffrée est écrite dans l'ordre.
 
         \begin{algorithm}[htbp]
             \SetAlgoLined
@@ -92,11 +92,11 @@
 
                 index[r].remove()\;
             }
-            \caption{Algorithme de chiffrement par permutation pseudo aléatoire d'une image couleur}
+            \caption{Algorithme de chiffrement par permutation pseudo-aléatoire d'une image couleur}
             \label{algo:decipher}
         \end{algorithm}
 
-        Celon le même procédé, la figure \ref{fig:decipher} montre les trois premières itérations pour le même tableau de cinq cases.
+        Selon le même procédé, la figure \ref{fig:decipher} montre les trois premières itérations pour le même tableau de cinq cases.
 
         \begin{figure}[htbp]
             \begin{center}
@@ -109,17 +109,17 @@
                 \subfloat[Itération 3]{
                     \includegraphics[width=0.3\textwidth]{rsc/index2_3.png}
                     \label{subfig:index2_3}}
-                \caption{Récupération pseudo aléatoire des anciens indices des pixels}
+                \caption{Récupération pseudo-aléatoire des anciens indices des pixels}
                 \label{fig:decipher}
             \end{center}
         \end{figure}
 
         Les nombres tirés par le générateur pseudo-aléatoire apparaissent exactement dans le même ordre que lors du chiffrement (à condition que la clef renseignée soit la même également).
-        Dans cette situation, on va donc chercher la valeur dans le l'image d'entré à l'indice renseigné dans le tableau d'indice en fonction du nombre pseudo-aléatoire tiré. On va ensuite stocker cette valeur dans la prochaine case libre de l'image de sortie.
+        Dans cette situation, on va donc chercher la valeur dans l'image d'entré à l'indice renseigné dans le tableau d'indice en fonction du nombre pseudo-aléatoire tiré. On va ensuite stocker cette valeur dans la prochaine case libre de l'image de sortie.
 
     \section{Permutation par blocs}
 
-        Afin de permettre à un appareil photo de récupérer et réorganiser correctement tout les pixels il faut les agencer et les déplacer par blocs entier. Il faut donc ajouter aux algorithmes précédents un deuxième groupe de boucle pour les blocs.
+        Afin de permettre à un appareil photo de récupérer et réorganiser correctement tous les pixels il faut les agencer et les déplacer par blocs entiers. Il faut donc ajouter aux algorithmes précédents un deuxième groupe de boucle pour les blocs.
 
         \begin{algorithm}[htbp]
             \SetAlgoLined
@@ -145,11 +145,11 @@
                     }
                 }
             }
-            \caption{Algorithme de chiffrement par permutation pseudo aléatoire d'une image couleur}
+            \caption{Algorithme de chiffrement par permutation pseudo-aléatoire d'une image couleur}
             \label{algo:cipher_block}
         \end{algorithm}
 
-        Dans l'algorithme \ref{algo:cipher_block}, la première boucle gère les différents blocs comme un pixels simple et calcule les coordonnées de l'angle supérieur gauche des blocs de départ et d'arrivé. La seconde section de boucle permet de calculer directement les coordonnées des pixels du bloc.
+        Dans l'algorithme \ref{algo:cipher_block}, la première boucle gère les différents blocs comme un pixel simple et calcule les coordonnées de l'angle supérieur gauche des blocs de départ et d'arrivé. La seconde section de boucle permet de calculer directement les coordonnées des pixels du bloc.
 
     \section{Moyenne des pixels}
 
@@ -219,13 +219,13 @@
                         \label{subfig:vangogh_50}}\\
                     \subfloat[Permutation 10 blocs moyennés]{
                         \includegraphics[width=0.3\textwidth]{rsc/van_gogh_a_10_12.png}
-                        \label{subfig:vangogh_10}}
+                        \label{subfig:vangogh_10_a}}
                     \subfloat[Permutation 25 blocs moyennés]{
                         \includegraphics[width=0.3\textwidth]{rsc/van_gogh_a_25_12.png}
-                        \label{subfig:vangogh_25}}
+                        \label{subfig:vangogh_25_a}}
                     \subfloat[Permutation 50 blocs moyennés]{
                         \includegraphics[width=0.3\textwidth]{rsc/van_gogh_a_50_12.png}
-                        \label{subfig:vangogh_50}}
+                        \label{subfig:vangogh_50_a}}
                     \caption{Résultat du chiffrement de la peinture "Van Gogh" par pixels et par blocs}
                     \label{fig:res_vangogh}
                 \end{center}
