@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     int height = 0;
     int width = 0;
 
-    int n = 1000;
+    int n = 800;
 
     OCTET* imgIn;
     OCTET* imgOut;
@@ -34,14 +34,14 @@ int main(int argc, char *argv[]) {
     lire_image_ppm(argv[1], imgIn, size);
     allocation_tableau(imgOut, OCTET, (n*n)*3);
 
-    double Ax = 791.0;
-    double Ay = 602.0;
-    double Bx = 1093.0;
-    double By = 3123.0;
-    double Cx = 3568.0;
-    double Cy = 2819.0;
-    double Dx = 3308.0;
-    double Dy = 324.0;
+    double Ax = 658.0;
+    double Ay = 219.0;
+    double Bx = 682.0;
+    double By = 2214.0;
+    double Cx = 2608.0;
+    double Cy = 2158.0;
+    double Dx = 2611.0;
+    double Dy = 251.0;
 
     double Ex, Ey, Fx, Fy, Gx, Gy, Hx, Hy;
     int Kx, Ky;

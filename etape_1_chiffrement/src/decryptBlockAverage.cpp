@@ -71,11 +71,12 @@ int main(int argc, char *argv[]) {
             newIndexFirst = (newBlockIndex - (newBlockIndex % nbBlockWidth)) * sizeBlock + ((newBlockIndex % nbBlockWidth) * widthBlock);
         }
 
+        newIndex = newIndexFirst + (widthBlock/2) + ((widthBlock/2) * width);
+
         // boucle pour chaque pixel du bloc
         for(int x = 0; x < widthBlock; x++) {
             for(int y = 0; y < widthBlock; y++) {
                 // calcul du nouvel indice du pixel dans le bloc
-                newIndex = newIndexFirst + x + (y * width);
                 oldIndex = oldIndexFirst + x + (y * width);
 
                 // melange

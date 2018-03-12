@@ -41,6 +41,14 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    double average = 0.0;
+    for(int i = 0; i < 256; i++) {
+        average += occurence[i] * i;
+    }
+    cout << "average : " << average << endl;
+    average /= size;
+    cout << "average : " << average << endl;
+
     FILE* file = fopen("profil.dat", "w");
 
     for(int i = 0; i < 256; i++) {

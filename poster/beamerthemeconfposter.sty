@@ -1,0 +1,26 @@
+%==============================================================================
+% build the poster title
+%==============================================================================
+\setbeamertemplate{headline}{
+ \leavevmode
+  \begin{columns}
+   \begin{column}{\linewidth}
+    \vskip1cm
+    \centering
+    \usebeamercolor{title in headline}{\color{blue}
+        \Huge % CHANGE this line for the size of the title
+        {\textbf{\inserttitle}}\\[0.5ex]}
+    \usebeamercolor{author in headline}{\color{fg}
+        \Large % CHANGE this line for the size of the author
+        {\insertauthor}\\[1ex]}
+    \usebeamercolor{institute in headline}{\color{fg}
+        \large % CHANGE this line for the size of the institut
+        {\insertinstitute}\\[1ex]}
+    \vskip1cm
+   \end{column}
+   \vspace{1cm}
+  \end{columns}
+ \vspace{0.5in} % CHANGE this line for the space between your title and the horizontal rule
+ \hspace{0.5in}\begin{beamercolorbox}[wd=47in,colsep=0.15cm]{cboxb}\end{beamercolorbox}
+ \vspace{0.1in} % CHANGE this line for the space between your horizontal rule and your main body
+}
