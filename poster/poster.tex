@@ -9,8 +9,7 @@
 \usepackage[francais]{babel}
 
 \usepackage{graphicx}
-\usepackage[lofdepth,lotdepth]{subfig}
-\usepackage{transparent}
+\usepackage{subfig}
 \usepackage{xcolor}
 \usepackage{enumitem}
 
@@ -25,16 +24,20 @@
         %-          TITLE          -
         %---------------------------
 
-        \begin{columns}[t]
-            \begin{column}{.1\linewidth}
-                \begin{figure}[t]
-                    \includegraphics[width=\linewidth]{rsc/logo_um.png}
-                \end{figure}
-            \end{column}
+        \setbeamercolor{block body}{fg=black,bg=green} % Colors of the block titles
+        \begin{block}{}
+            \begin{columns}[t]
+                \begin{column}{.1\linewidth}
+                    \begin{figure}[t]
+                        \includegraphics[width=\linewidth]{rsc/logo_um.png}
+                    \end{figure}
+                \end{column}
 
-            \begin{column}{.8\linewidth}
-                \begin{block}{\Huge \centering \textbf{Musée sécurisé en réalité augmentée}}
-                    \vspace{2em}
+                \begin{column}{.75\linewidth}
+                    \begin{center}
+                        {\Huge \textbf{Musée sécurisé en réalité augmentée}}
+                    \end{center}
+
                     \begin{columns}[t]
                         \begin{column}{.5\linewidth}
                             \begin{center}
@@ -48,18 +51,17 @@
                             \end{center}
                         \end{column}
                     \end{columns}
-                \end{block}
-            \end{column}
+                \end{column}
 
-            \begin{column}{.1\linewidth}
-                \begin{figure}[t]
-                    \includegraphics[width=\linewidth]{rsc/logo_lirmm.png}
-                \end{figure}
-            \end{column}
-        \end{columns}
+                \begin{column}{.1\linewidth}
+                    \begin{figure}[t]
+                        \includegraphics[width=\linewidth]{rsc/logo_lirmm.png}
+                    \end{figure}
+                \end{column}
+            \end{columns}
+        \end{block}
 
-        \vspace{2em}
-        \rule{\linewidth}{2mm}
+        % \rule{\linewidth}{2mm}
 
         %----------------------------
         %-          POSTER          -
@@ -82,30 +84,27 @@
                 \setbeamercolor{block title}{fg=white,bg=blue} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Index}}
-                    \vspace{.5em}
+                    \begin{figure}[t]
+                        \begin{center}
+                            \captionsetup[subfigure]{justification=centering}
+                            \subfloat[Itération 1]{
+                                \includegraphics[width=.3\linewidth]{rsc/index1_1.png}}
+                            \subfloat[Itération 2]{
+                                \includegraphics[width=.3\linewidth]{rsc/index1_2.png}}
+                            \subfloat[Itération 3]{
+                                \includegraphics[width=.3\linewidth]{rsc/index1_3.png}}
+                            \caption{Algorithme de chiffrement pseudo-aléatoire}
+                        \end{center}
+                    \end{figure}
 
-                    \begin{columns}[t]
-                        \begin{column}{.3\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/index1_1.png}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.3\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/index1_2.png}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.3\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/index1_3.png}
-                            \end{figure}
-                        \end{column}
-                    \end{columns}
+                    Chaque itération se décompose en 4 étapes :
+                    \begin{itemize}[label=-]
+                        \item Tirage d'un nombre aléatoire $r$ entre 0 et la taille d'un tableau d'index.
+                        \item Récupération du nouvel indice $n$ du pixels dans le tableau d'index à l'indice $r$.
+                        \item Écriture du pixels dans la nouvelle case $n$ de l'image de sortie.
+                        \item Suppression de la case $n$ du tableau d'index.
+                    \end{itemize}
                 \end{block}
-
-                \vspace{1em}
 
                 %------------------------------------
                 %-          C1 - Résultats          -
@@ -114,78 +113,34 @@
                 \setbeamercolor{block title}{fg=white,bg=green} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Résultats}}
-                    \vspace{.5em}
-
-                    \begin{columns}[t]
-                        \begin{column}{.25\linewidth}
-
-                        \end{column}
-
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh.png}\\
-                                {\small Image originale 800x800}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.25\linewidth}
-
-                        \end{column}
-                    \end{columns}
-
-                    \begin{columns}[t]
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_10_12.png}\\
-                                {\small Chiffrement 10x10 blocs de 80x80 pixels}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_25_12.png}\\
-                                {\small Chiffrement 25x25 blocs de 32x32 pixels}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_50_12.png}\\
-                                {\small Chiffrement 50x50 blocs de 16x16 pixels}
-                            \end{figure}
-                        \end{column}
-                    \end{columns}
-
-                    \begin{columns}[t]
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_a_10_12.png}\\
-                                {\small Chiffrement 10x10 blocs de 80x80 pixels moyennés}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_a_25_12.png}\\
-                                {\small Chiffrement 25x25 blocs de 32x32 pixels moyennés}
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.25\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_a_50_12.png}\\
-                                {\small Chiffrement 50x50 blocs de 16x16 pixels moyennés}
-                            \end{figure}
-                        \end{column}
-                    \end{columns}
-
                     \begin{figure}[t]
-                        \includegraphics[width=.25\linewidth]{rsc/van_gogh_800_12.png}\\
-                        {\small Chiffrement 800x800 blocs de 1 pixels}
+                        \begin{center}
+                            \captionsetup[subfigure]{justification=centering}
+                            \subfloat[Image original de 800x800 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Chiffrement par 800x800 blocs de 1x1 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_800_12.png}}\\
+                            \subfloat[Chiffrement par 10x10 blocs de 80x80 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_10_12.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Chiffrement par 25x25 blocs de 32x32 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_25_12.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Chiffrement par 50x50 blocs de 16x16 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_50_12.png}}\\
+                            \subfloat[Chiffrement par 10x10 blocs de 80x80 pixels moyennés]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_a_10_12.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Chiffrement par 25x25 blocs de 32x32 pixels moyennés]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_a_25_12.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Chiffrement par 50x50 blocs de 16x16 pixels moyennés]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_a_50_12.png}}\\
+                            \caption{Chiffrement par bloc et bloc moyenné de la peinture "Térasse du café le soir" de Van Gogh}
+                        \end{center}
                     \end{figure}
                 \end{block}
-
-                \vspace{1em}
             \end{column}
 
             %--------------------------------------------
@@ -204,8 +159,6 @@
                 \setbeamercolor{block title}{fg=white,bg=red} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Prétraitements}}
-                    \vspace{.5em}
-
                     Traitement à effectuer sur la photo pour permettre la transformation :
                     \begin{itemize}[label=\textbullet]
                         \item Conversion en image en niveau de gris :
@@ -223,8 +176,6 @@
                     \end{itemize}
                 \end{block}
 
-                \vspace{1em}
-
                 %----------------------------------------
                 %-          C2 - TRANFORMATION          -
                 %----------------------------------------
@@ -232,16 +183,10 @@
                 \setbeamercolor{block title}{fg=white,bg=blue} % Colors of the block titles
                 \setbeamercolor{block body}{fg=blue,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Transformation}}
-                    \vspace{.5em}
-
                     \begin{figure}[t]
                         \includegraphics[width=.5\linewidth]{rsc/transform_formula.png}\\
                     \end{figure}
-
-                    \vspace{.5em}
                 \end{block}
-
-                \vspace{1em}
 
                 %------------------------------------
                 %-          C2 - RESULTATS          -
@@ -250,8 +195,6 @@
                 \setbeamercolor{block title}{fg=white,bg=green} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Résultats}}
-                    \vspace{.5em}
-
                     \begin{columns}[t]
                         \begin{column}{.2\linewidth}
                             \begin{figure}[t]
@@ -295,11 +238,7 @@
                             \end{center}
                         \end{column}
                     \end{columns}
-
-                    \vspace{.5em}
                 \end{block}
-
-                \vspace{1em}
             \end{column}
         \end{columns}
 
@@ -317,7 +256,7 @@
                 \setbeamercolor{block title}{fg=white,bg=black} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Ressemblance de l'image}}
-                    \vspace{.5em}
+
 
                     \begin{center}
                         \begin{figure}[t]
@@ -335,7 +274,7 @@
                 \setbeamercolor{block title}{fg=white,bg=black} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
                 \begin{block}{\centering \textbf{Lecture des pixels}}
-                    \vspace{.5em}
+
 
                     \begin{center}
                         figure psnr lecture des pixels
