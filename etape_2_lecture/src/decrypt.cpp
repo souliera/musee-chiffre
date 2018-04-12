@@ -265,29 +265,63 @@ int main(int argc, char *argv[]) {
 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
-            cout << "[" << i << "," << j << "]" << endl;
+            // cout << "[" << i << "," << j << "]" << endl;
 
-            Ex = ((double)(i) / ((double)(n) / (Bx - Ax))) + Ax;
+            if(Bx - Ax == 0) {
+                Ex = ((double)(i) / (double)(n)) + Ax;
+            } else {
+                Ex = ((double)(i) / ((double)(n) / (Bx - Ax))) + Ax;
+            }
             Ey = ((double)(i) / ((double)(n) / (By - Ay))) + Ay;
             Fx = ((double)(j) / ((double)(n) / (Dx - Ax))) + Ax;
-            Fy = ((double)(j) / ((double)(n) / (Dy - Ay))) + Ay;
-            Gx = ((double)(i) / ((double)(n) / (Cx - Dx))) + Dx;
+            if(Dy - Ay == 0) {
+                Fy = ((double)(j) / (double)(n)) + Ay;
+            } else {
+                Fy = ((double)(j) / ((double)(n) / (Dy - Ay))) + Ay;
+            }
+            if(Cx - Dx == 0) {
+                Gx = ((double)(i) / (double)(n)) + Dx;
+            } else {
+                Gx = ((double)(i) / ((double)(n) / (Cx - Dx))) + Dx;
+            }
             Gy = ((double)(i) / ((double)(n) / (Cy - Dy))) + Dy;
             Hx = ((double)(j) / ((double)(n) / (Cx - Bx))) + Bx;
-            Hy = ((double)(j) / ((double)(n) / (Cy - By))) + By;
+            if(Cy - By == 0) {
+                Hy = ((double)(j) / (double)(n)) + By;
+            } else {
+                Hy = ((double)(j) / ((double)(n) / (Cy - By))) + By;
+            }
+
+            // cout << "\tE = [" << Ex << ", " << Ey << "]" << endl;
+            // cout << "\tF = [" << Fx << ", " << Fy << "]" << endl;
+            // cout << "\tG = [" << Gx << ", " << Gy << "]" << endl;
+            // cout << "\tH = [" << Hx << ", " << Hy << "]" << endl;
 
             a1 = (Gy - Ey) / (Gx - Ex);
             b1 = Ey - a1 * Ex;
-            a2 = (Hy - Fy) / (Hx - Fx);
+            if(Hx == Fx) {
+                a2 = 0;
+            } else {
+                a2 = (Hy - Fy) / (Hx - Fx);
+            }
             b2 = Fy - a2 * Fx;
 
             // cout << "\t" << a1 << "x + " << b1 << endl;
             // cout << "\t" << a2 << "x + " << b2 << endl;
 
-            Kx = (int)round((b2 - b1) / (a1 - a2));
-            Ky = (int)round(a1 * ((b2 - b1) / (a1 - a2)) + b1);
+            if(Fx == Hx) {
+                Kx = Fx;
+            } else {
+                Kx = (int)round((b2 - b1) / (a1 - a2));
+            }
+            if(Ey == Gy) {
+                Ky = Ey;
+            } else {
+                // cout << (b2 - b1) << " " << (a1 - a2) << endl;
+                Ky = (int)round(a1 * ((b2 - b1) / (a1 - a2)) + b1);
+            }
 
-            cout << "\t[" << Kx << "," << Ky << "]" << endl;
+            // cout << "\t[" << Kx << "," << Ky << "]" << endl;
 
             transform[(j*3)*n+(i*3)+0] = imgIn[(Kx*3)*width+(Ky*3)+0];
             transform[(j*3)*n+(i*3)+1] = imgIn[(Kx*3)*width+(Ky*3)+1];
@@ -368,10 +402,14 @@ int main(int argc, char *argv[]) {
 
             // newIndex = newIndexFirst + (widthBlock/2) + ((widthBlock/2) * n);
 
+            averageR = 0;
+            averageG = 0;
+            averageB = 0;
+
             // calcul de la moyenne du bloc
-            for(int x = -1; x < 1; x++) {
-                for(int y = -1; y < 1; y++) {
-                    newIndex = newIndexFirst + ((widthBlock/2)+y) + (((widthBlock/2)+x) * n);
+            for(int x = -1; x <= 1; x++) {
+                for(int y = -1; y <= 1; y++) {
+                    newIndex = newIndexFirst + ((widthBlock/2)+x) + (((widthBlock/2)+x) * n);
                     // newIndex = newIndexFirst + x + (y * n);
                     averageR += transform[newIndex*3+0];
                     averageG += transform[newIndex*3+1];

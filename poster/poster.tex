@@ -13,18 +13,21 @@
 \usepackage{xcolor}
 \usepackage{enumitem}
 
-\definecolor{tagada}{RGB}{172, 42, 42}
-\definecolor{tagado}{RGB}{42, 42, 172}
+\definecolor{framebg}{RGB}{225, 225, 225}
+\definecolor{titlebg}{RGB}{102, 205, 0}
+\definecolor{titleboxbg}{RGB}{50, 205, 50}
 
 \setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{caption}[numbered]
 
 \begin{document}
+    \setbeamercolor{background canvas}{bg=framebg}
     \begin{frame}[t]
         %---------------------------
         %-          TITLE          -
         %---------------------------
 
-        \setbeamercolor{block body}{fg=black,bg=green} % Colors of the block titles
+        \setbeamercolor{block body}{fg=black,bg=titlebg} % Colors of the block titles
         \begin{block}{}
             \begin{columns}[t]
                 \begin{column}{.1\linewidth}
@@ -72,27 +75,26 @@
             %-          POSTER - CHIFFREMENT          -
             %------------------------------------------
 
-            \begin{column}{.5\linewidth}
-                \begin{center}
-                    {\textbf{Chiffrement}}
-                \end{center}
+            \begin{column}{.49\linewidth}
 
                 %--------------------------------
                 %-          C1 - INDEX          -
                 %--------------------------------
 
-                \setbeamercolor{block title}{fg=white,bg=blue} % Colors of the block titles
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Index}}
+                \begin{block}{\centering \textbf{Chiffrement - Méthode}}
+                    \vspace{.5cm}
+
                     \begin{figure}[t]
                         \begin{center}
                             \captionsetup[subfigure]{justification=centering}
                             \subfloat[Itération 1]{
-                                \includegraphics[width=.3\linewidth]{rsc/index1_1.png}}
+                                \includegraphics[width=.3\linewidth]{rsc/index_1.png}}
                             \subfloat[Itération 2]{
-                                \includegraphics[width=.3\linewidth]{rsc/index1_2.png}}
+                                \includegraphics[width=.3\linewidth]{rsc/index_2.png}}
                             \subfloat[Itération 3]{
-                                \includegraphics[width=.3\linewidth]{rsc/index1_3.png}}
+                                \includegraphics[width=.3\linewidth]{rsc/index_3.png}}
                             \caption{Algorithme de chiffrement pseudo-aléatoire}
                         \end{center}
                     \end{figure}
@@ -104,15 +106,21 @@
                         \item Écriture du pixels dans la nouvelle case $n$ de l'image de sortie.
                         \item Suppression de la case $n$ du tableau d'index.
                     \end{itemize}
+
+                    \vspace{.5cm}
                 \end{block}
+
+                \vspace{.5cm}
 
                 %------------------------------------
                 %-          C1 - Résultats          -
                 %------------------------------------
 
-                \setbeamercolor{block title}{fg=white,bg=green} % Colors of the block titles
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Résultats}}
+                \begin{block}{\centering \textbf{Chiffrement - Résultats}}
+                    \vspace{.5cm}
+
                     \begin{figure}[t]
                         \begin{center}
                             \captionsetup[subfigure]{justification=centering}
@@ -137,28 +145,46 @@
                             \hspace{.05\linewidth}
                             \subfloat[Chiffrement par 50x50 blocs de 16x16 pixels moyennés]{
                                 \includegraphics[width=.25\linewidth]{rsc/van_gogh_a_50_12.png}}\\
-                            \caption{Chiffrement par bloc et bloc moyenné de la peinture "Térasse du café le soir" de Van Gogh}
+                            \caption{Chiffrement par bloc et bloc moyenné de l'oeuvre "Térasse du café le soir" de Van Gogh}
                         \end{center}
                     \end{figure}
                 \end{block}
-            \end{column}
 
-            %--------------------------------------------
-            %-          POSTER - DECHIFFREMENT          -
-            %--------------------------------------------
+                \vspace{.5cm}
 
-            \begin{column}{.5\linewidth}
-                \begin{center}
-                    {\textbf{Déhiffrement}}
-                \end{center}
+                %-----------------------------------------------
+                %-          C2 - QUALITE RESSEMBLANCE          -
+                %-----------------------------------------------
+
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
+                \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
+                \begin{block}{\centering \textbf{Qualité de ressemblance de l'oeuvre}}
+                    \vspace{.5cm}
+
+                    \begin{center}
+                        \begin{figure}[t]
+                            \includegraphics[width=.5\linewidth]{rsc/psnr_ressemblance.png}
+                            \caption{PSNR de la peinture en fonction de la taille des blocs}
+                        \end{figure}
+                    \end{center}
+
+                    D'après le PSNR (Peak Signal to Noise Ratio) obtenu avec le découpage en bloc de diverses tailles de la peinture, on observe une qualité acceptable (PSNR >= 20 db) à partir d'une taille de bloc de 8x8 pixels (19.6387 db).
+                    Toutes les décompositions avec des blocs d'une taille inférieure ou égale à 8x8 pixels sont considéré comme ressemblante à l'oeuvre d'origine.
+
+                    \vspace{.5cm}
+                \end{block}
+
+                \vspace{.5cm}
 
                 %----------------------------------------
                 %-          C2 - PRETRAITEMENT          -
                 %----------------------------------------
 
-                \setbeamercolor{block title}{fg=white,bg=red} % Colors of the block titles
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Prétraitements}}
+                \begin{block}{\centering \textbf{Lecture - Prétraitements}}
+                    \vspace{.5cm}
+
                     Traitement à effectuer sur la photo pour permettre la transformation :
                     \begin{itemize}[label=\textbullet]
                         \item Conversion en image en niveau de gris :
@@ -168,33 +194,45 @@
                         \item Conversion en image binaire :
                         \begin{itemize}[label=$\rightarrow$]
                             \item sépare la peinture du fond pour failiter la détection des angles.
+                            \item utilise la variance moyenne comme valeur de seuil
                         \end{itemize}
                         \item Détection des angles :
                         \begin{itemize}[label=$\rightarrow$]
-                            \item Trouve les coordonnées des quatres angle pour les prendre comme base de l'algorithme de transformation.
+                            \item trouve les quatres points tels que leurs distances aux coins respectifs de l'image soit minimale.
                         \end{itemize}
                     \end{itemize}
+
+                    \vspace{.5cm}
                 \end{block}
+            \end{column}
+
+            %--------------------------------------------
+            %-          POSTER - DECHIFFREMENT          -
+            %--------------------------------------------
+
+            \begin{column}{.49\linewidth}
 
                 %----------------------------------------
                 %-          C2 - TRANFORMATION          -
                 %----------------------------------------
 
-                \setbeamercolor{block title}{fg=white,bg=blue} % Colors of the block titles
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=blue,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Transformation}}
+                \begin{block}{\centering \textbf{Lecture - Transformation}}
                     \begin{figure}[t]
-                        \includegraphics[width=.5\linewidth]{rsc/transform_formula.png}\\
+                        \includegraphics[width=.5\linewidth]{rsc/formule_transformation.png}\\
                     \end{figure}
                 \end{block}
+
+                \vspace{1cm}
 
                 %------------------------------------
                 %-          C2 - RESULTATS          -
                 %------------------------------------
 
-                \setbeamercolor{block title}{fg=white,bg=green} % Colors of the block titles
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Résultats}}
+                \begin{block}{\centering \textbf{Lecture - Résultats}}
                     \begin{columns}[t]
                         \begin{column}{.2\linewidth}
                             \begin{figure}[t]
@@ -204,6 +242,7 @@
 
                         \begin{column}{.2\linewidth}
                             \begin{figure}[t]
+                                \hspace{.5cm}
                                 \includegraphics[width=\linewidth]{rsc/van_gogh_picture_a_10_d.png}\\
                             \end{figure}
                         \end{column}
@@ -220,6 +259,7 @@
 
                         \begin{column}{.2\linewidth}
                             \begin{figure}[t]
+                                \hspace{.5cm}
                                 \includegraphics[width=\linewidth]{rsc/van_gogh_picture_10_d.png}\\
                             \end{figure}
                         \end{column}
@@ -238,50 +278,50 @@
                             \end{center}
                         \end{column}
                     \end{columns}
+
+                    \begin{figure}[t]
+                        \begin{center}
+                            \captionsetup[subfigure]{justification=centering}
+                            \subfloat[Photo 80x80 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_25.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Photo 32x32 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_40.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Photo 16x16 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_50.png}}\\
+                            \subfloat[Déchiffrement 80x80 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_25_d_a.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Déchiffrement 32x32 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_40_d_a.png}}
+                            \hspace{.05\linewidth}
+                            \subfloat[Déchiffrement 16x16 pixels]{
+                                \includegraphics[width=.25\linewidth]{rsc/van_gogh_50_d_a.png}}\\
+                            \caption{Lecture et déchiffrement par bloc moyenné de l'oeuvre "Térasse du café le soir" de Van Gogh}
+                        \end{center}
+                    \end{figure}
                 \end{block}
-            \end{column}
-        \end{columns}
 
-        %--------------------------------------
-        %-          POSTER - QUALITE          -
-        %--------------------------------------
+                \vspace{1cm}
 
-        \begin{columns}[t]
+                %------------------------------------------
+                %-          C2 - QUALITE LECTURE          -
+                %------------------------------------------
 
-            %-----------------------------------------
-            %-          C3 - Reconnaissance          -
-            %-----------------------------------------
-
-            \begin{column}{.5\linewidth}
-                \setbeamercolor{block title}{fg=white,bg=black} % Colors of the block titles
+                \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Ressemblance de l'image}}
-
-
+                \begin{block}{\centering \textbf{Qualité de lecture de l'oeuvre imprimée}}
                     \begin{center}
                         \begin{figure}[t]
-                            \includegraphics[width=.6\linewidth]{rsc/psnr_ressemblance.png}
+                            \includegraphics[width=.5\linewidth]{rsc/psnr_lecture.png}
+                            \caption{PSNR de la lecture de la peinture en fonction de la taille des blocs}
                         \end{figure}
                     \end{center}
-                \end{block}
-            \end{column}
 
-            %----------------------------------
-            %-          C3 - LECTURE          -
-            %----------------------------------
-
-            \begin{column}{.5\linewidth}
-                \setbeamercolor{block title}{fg=white,bg=black} % Colors of the block titles
-                \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Lecture des pixels}}
-
-
-                    \begin{center}
-                        figure psnr lecture des pixels
-                        % \begin{figure}[t]
-                        %     \includegraphics[width=.5\linewidth]{rsc/logo_lirmm.png}
-                        % \end{figure}
-                    \end{center}
+                    La qualité d'acquisition de l'image dépend de l'appareil utilisé. Dans le cadre de ce projet, il s'agit d'une Iphone 6.
+                    Plus la taille des blocs est petite, plus la peinture déchiffré est ressemblante à l'oeuvre d'origine. Cependant, si l'on atteint la taille de 16x16 pixels, la précision de l'image est trop faible pour permettre un déchiffrement correct de la peinture.
+                    Le meilleur résultat obtenable avec cet appareil est avec un découpage en blocs de maximum 20x20 pixels.
                 \end{block}
             \end{column}
         \end{columns}
