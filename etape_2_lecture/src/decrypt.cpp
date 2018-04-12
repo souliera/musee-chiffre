@@ -50,6 +50,22 @@ int main(int argc, char *argv[]) {
     int newBlockIndex;
     int oldIndexFirst, newIndexFirst;
     int newIndex, oldIndex;
+    // white balance
+    int minR = -1;
+    int maxR = -1;
+    int minG = -1;
+    int maxG = -1;
+    int minB = -1;
+    int maxB = -1;
+    int nbPixel = 0;
+    int* occurenceR = new int[256];
+    int* occurenceG = new int[256];
+    int* occurenceB = new int[256];
+    for(int i = 0; i < 256; i++) {
+        occurenceR[i] = 0;
+        occurenceG[i] = 0;
+        occurenceB[i] = 0;
+    }
 
     // initialisation du generateur pseudo-aleatoire
     srand(atoi(argv[5]));
@@ -59,6 +75,7 @@ int main(int argc, char *argv[]) {
     OCTET* binary;
     OCTET* closing;
     OCTET* transform;
+    OCTET* decrypt;
     OCTET* imgOut;
 
     int* occurence = new int[256];
@@ -82,6 +99,7 @@ int main(int argc, char *argv[]) {
     allocation_tableau(binary, OCTET, size);
     allocation_tableau(closing, OCTET, size);
     allocation_tableau(transform, OCTET, (n*n)*3);
+    allocation_tableau(decrypt, OCTET, (n*n)*3);
     allocation_tableau(imgOut, OCTET, (n*n)*3);
 
     lire_image_ppm(argv[1], imgIn, size);
@@ -363,9 +381,9 @@ int main(int argc, char *argv[]) {
                     oldIndex = oldIndexFirst + x + (y * n);
 
                     // melange
-                    imgOut[oldIndex*3+0] = transform[newIndex*3+0];
-                    imgOut[oldIndex*3+1] = transform[newIndex*3+1];
-                    imgOut[oldIndex*3+2] = transform[newIndex*3+2];
+                    decrypt[oldIndex*3+0] = transform[newIndex*3+0];
+                    decrypt[oldIndex*3+1] = transform[newIndex*3+1];
+                    decrypt[oldIndex*3+2] = transform[newIndex*3+2];
                 }
             }
 
@@ -428,9 +446,13 @@ int main(int argc, char *argv[]) {
                     oldIndex = oldIndexFirst + x + (y * n);
 
                     // melange
-                    imgOut[oldIndex*3+0] = averageR;
-                    imgOut[oldIndex*3+1] = averageG;
-                    imgOut[oldIndex*3+2] = averageB;
+                    decrypt[oldIndex*3+0] = averageR;
+                    decrypt[oldIndex*3+1] = averageG;
+                    decrypt[oldIndex*3+2] = averageB;
+
+                    // decrypt[oldIndex*3+0] = transform[newIndex*3+0];
+                    // decrypt[oldIndex*3+1] = transform[newIndex*3+1];
+                    // decrypt[oldIndex*3+2] = transform[newIndex*3+2];
                 }
             }
 
@@ -443,12 +465,83 @@ int main(int argc, char *argv[]) {
         cout << "end average decrypt" << endl;
     }
 
+    //*****************
+    //* WHITE BALANCE *
+    //*****************
+
+    cout << "begin white balance" << endl;
+
+    for(int i = 0; i < (n*n); i++) {
+        occurenceR[decrypt[(i*3)+0]]++;
+        occurenceG[decrypt[(i*3)+1]]++;
+        occurenceB[decrypt[(i*3)+2]]++;
+    }
+
+    for(int i = 0; i <= 255; i++) {
+        nbPixel += occurenceR[i];
+        if(nbPixel > (n*n) * 0.0005) {
+            minR = i;
+            break;
+        }
+    }
+    nbPixel = 0;
+    for(int i = 255; i >= 0; i--) {
+        nbPixel += occurenceR[i];
+        if(nbPixel > (n*n) * 0.0005) {
+            maxR = i;
+            break;
+        }
+    }
+
+    nbPixel = 0;
+    for(int i = 0; i <= 255; i++) {
+        nbPixel += occurenceG[i];
+        if(nbPixel > (n*n) * 0.0005) {
+            minG = i;
+            break;
+        }
+    }
+    nbPixel = 0;
+    for(int i = 255; i >= 0; i--) {
+        nbPixel += occurenceG[i];
+        if(nbPixel > (n*n) * 0.0005) {
+            maxG = i;
+            break;
+        }
+    }
+
+    nbPixel = 0;
+    for(int i = 0; i <= 255; i++) {
+        nbPixel += occurenceB[i];
+        if(nbPixel > (n*n) * 0.0005) {
+            minB = i;
+            break;
+        }
+    }
+    nbPixel = 0;
+    for(int i = 255; i >= 0; i--) {
+        nbPixel += occurenceB[i];
+        if(nbPixel > (n*n) * 0.0005) {
+            maxB = i;
+            break;
+        }
+    }
+
+    for(int i = 0; i < (n*n)*3; i+=3) {
+        imgOut[i+0] = ((decrypt[i+0] - minR) * 255) / (maxR - minR);
+        imgOut[i+1] = ((decrypt[i+1] - minG) * 255) / (maxG - minG);
+        imgOut[i+2] = ((decrypt[i+2] - minB) * 255) / (maxB - minB);
+    }
+
+    cout << "end white balance" << endl;
+
     clock_t end2 = clock();
 
     ecrire_image_pgm((char*)"rsc/grayScale.pgm", gray, height, width);
     ecrire_image_pgm((char*)"rsc/binary.pgm", binary, height, width);
     ecrire_image_pgm((char*)"rsc/closing.pgm", closing, height, width);
     ecrire_image_ppm((char*)"rsc/transform.ppm", transform, n, n);
+    ecrire_image_ppm((char*)"rsc/decrypt.ppm", decrypt, n, n);
     ecrire_image_ppm(argv[2], imgOut, n, n);
 
     delete[] occurence;

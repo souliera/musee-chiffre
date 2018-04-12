@@ -23,7 +23,9 @@ int main(int argc, char* argv[]) {
 
     allocation_tableau(imgIn, OCTET, size*3);
     lire_image_ppm(argv[1], imgIn, height * width);
-    allocation_tableau(imgOut, OCTET, size);
+    allocation_tableau(imgOut, OCTET, size*3);
+
+    clock_t begin2 = clock();
 
     int* occurenceR = new int[256];
     int* occurenceG = new int[256];
@@ -40,24 +42,18 @@ int main(int argc, char* argv[]) {
         occurenceB[imgIn[(i*3)+2]]++;
     }
 
-    int aR = -1;
-    int bR = -1;
-    int aG = -1;
-    int bG = -1;
-    int aB = -1;
-    int bB = -1;
-    int alphaR = -1;
-    int betaR = -1;
-    int alphaG = -1;
-    int betaG = -1;
-    int alphaB = -1;
-    int betaB = -1;
+    int minR = -1;
+    int maxR = -1;
+    int minG = -1;
+    int maxG = -1;
+    int minB = -1;
+    int maxB = -1;
     int nbPixel = 0;
 
     for(int i = 0; i <= 255; i++) {
         nbPixel += occurenceR[i];
         if(nbPixel > size * 0.0005) {
-            aR = i;
+            minR = i;
             break;
         }
     }
@@ -65,7 +61,7 @@ int main(int argc, char* argv[]) {
     for(int i = 255; i >= 0; i--) {
         nbPixel += occurenceR[i];
         if(nbPixel > size * 0.0005) {
-            bR = i;
+            maxR = i;
             break;
         }
     }
@@ -74,7 +70,7 @@ int main(int argc, char* argv[]) {
     for(int i = 0; i <= 255; i++) {
         nbPixel += occurenceG[i];
         if(nbPixel > size * 0.0005) {
-            aG = i;
+            minG = i;
             break;
         }
     }
@@ -82,7 +78,7 @@ int main(int argc, char* argv[]) {
     for(int i = 255; i >= 0; i--) {
         nbPixel += occurenceG[i];
         if(nbPixel > size * 0.0005) {
-            bG = i;
+            maxG = i;
             break;
         }
     }
@@ -91,7 +87,7 @@ int main(int argc, char* argv[]) {
     for(int i = 0; i <= 255; i++) {
         nbPixel += occurenceB[i];
         if(nbPixel > size * 0.0005) {
-            aB = i;
+            minB = i;
             break;
         }
     }
@@ -99,31 +95,31 @@ int main(int argc, char* argv[]) {
     for(int i = 255; i >= 0; i--) {
         nbPixel += occurenceB[i];
         if(nbPixel > size * 0.0005) {
-            bB = i;
+            maxB = i;
             break;
         }
     }
-
-    alphaR = (255 * aR) / (bR-aR);
-    betaR = 255 / (bR-aR);
-    alphaG = (255 * aG) / (bG-aG);
-    betaG = 255 / (bG-aG);
-    alphaB = (255 * aB) / (bB-aB);
-    betaB = 255 / (bB-aB);
 
     for(int i = 0; i < size*3; i+=3) {
-        imgOut[i+0] = alphaR + (betaR * imgIn[i+0]);
-        imgOut[i+1] = alphaG + (betaG * imgIn[i+1]);
-        imgOut[i+2] = alphaB + (betaB * imgIn[i+2]);
+        imgOut[i+0] = ((imgIn[i+0] - minR) * 255) / (maxR - minR);
+        imgOut[i+1] = ((imgIn[i+1] - minG) * 255) / (maxG - minG);
+        imgOut[i+2] = ((imgIn[i+2] - minB) * 255) / (maxB - minB);
     }
+
+    clock_t end2 = clock();
 
     ecrire_image_ppm(argv[2], imgOut,  height, width);
 
     delete[] occurenceR;
     delete[] occurenceG;
     delete[] occurenceB;
-    free(imgIn);
-    free(imgOut);
+    delete imgIn;
+    delete imgOut;
+
+    clock_t end1 = clock();
+
+    cout << "Computing time : " << ((float)(end2-begin2))/ CLOCKS_PER_SEC << endl;
+    cout << "Total time : " << ((float)(end1-begin1))/ CLOCKS_PER_SEC << endl;
 
     return 0;
 }

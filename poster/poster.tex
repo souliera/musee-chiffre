@@ -14,7 +14,6 @@
 \usepackage{enumitem}
 
 \definecolor{framebg}{RGB}{225, 225, 225}
-\definecolor{titlebg}{RGB}{102, 205, 0}
 \definecolor{titleboxbg}{RGB}{50, 205, 50}
 
 \setbeamertemplate{blocks}[rounded][shadow=false]
@@ -27,7 +26,7 @@
         %-          TITLE          -
         %---------------------------
 
-        \setbeamercolor{block body}{fg=black,bg=titlebg} % Colors of the block titles
+        \setbeamercolor{block body}{fg=black,bg=titleboxbg} % Colors of the block titles
         \begin{block}{}
             \begin{columns}[t]
                 \begin{column}{.1\linewidth}
@@ -232,53 +231,7 @@
 
                 \setbeamercolor{block title}{fg=white,bg=titleboxbg} % Colors of the block titles
                 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the block titles
-                \begin{block}{\centering \textbf{Lecture - Résultats}}
-                    \begin{columns}[t]
-                        \begin{column}{.2\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_picture_a_10.png}\\
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.2\linewidth}
-                            \begin{figure}[t]
-                                \hspace{.5cm}
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_picture_a_10_d.png}\\
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.005\linewidth}
-
-                        \end{column}
-
-                        \begin{column}{.2\linewidth}
-                            \begin{figure}[t]
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_picture_10.png}\\
-                            \end{figure}
-                        \end{column}
-
-                        \begin{column}{.2\linewidth}
-                            \begin{figure}[t]
-                                \hspace{.5cm}
-                                \includegraphics[width=\linewidth]{rsc/van_gogh_picture_10_d.png}\\
-                            \end{figure}
-                        \end{column}
-                    \end{columns}
-
-                    \begin{columns}[t]
-                        \begin{column}{.5\linewidth}
-                            \begin{center}
-                                {\small Déchiffrement 10x10 blocs de 80x80 pixels moyennés}
-                            \end{center}
-                        \end{column}
-
-                        \begin{column}{.5\linewidth}
-                            \begin{center}
-                                {\small Déchiffrement 10x10 blocs de 80x80 pixels}
-                            \end{center}
-                        \end{column}
-                    \end{columns}
-
+                \begin{block}{\centering \textbf{Lecture - Résultats}}             
                     \begin{figure}[t]
                         \begin{center}
                             \captionsetup[subfigure]{justification=centering}
