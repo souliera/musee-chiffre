@@ -1,0 +1,48 @@
+\documentclass[10pt, c]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+
+\usepackage{subfig}
+
+\usetheme{PaloAlto}
+
+\title{Musée sécurisé en réalité augmentée}
+\author{Théo CLAYETTE\\Thibaut ETIENNE\\Arnaud SOULIER}
+\institute{Université des Sciences de Montpellier}
+\date{28 Mai 2018}
+
+\AtBeginSubsection[]{
+    \begin{frame}
+        \frametitle{Sommaire}
+        \tableofcontents[hideothersubsections, currentsection, currentsubsection]
+    \end{frame}
+}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\addtobeamertemplate{footline}{\flushright{\insertframenumber/\inserttotalframenumber}}
+
+\begin{document}
+
+	\begin{frame}
+	\titlepage
+	\end{frame}
+
+    \begin{frame}
+        \frametitle{Sommaire}
+        \tableofcontents[pausesections]
+    \end{frame}
+
+    \include{./sections/1_introduction}
+    \include{./sections/2_developpement}
+    \include{./sections/3_gestion}
+    \include{./sections/reference}
+
+\end{document}

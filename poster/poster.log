@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.21)  12 APR 2018 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.21)  25 APR 2018 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1206,27 +1206,35 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks48
 \enit@inbox=\box53
 \enitdp@description=\count176
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen257
+\WF@size=\dimen258
+\c@WF@wrappedlines=\count177
+\WF@box=\box54
+\WF@everypar=\toks49
+Package: wrapfig 2003/01/31  v 3.6
 ) (./poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <34.83> not available
-(Font)              size <35.83> substituted on input line 22.
+(Font)              size <35.83> substituted on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1264,17 +1272,17 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <34.83> not available
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count177
-\scratchdimen=\dimen257
-\scratchbox=\box54
-\nofMPsegments=\count178
-\nofMParguments=\count179
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count180
-\MPscratchDim=\dimen258
-\MPnumerator=\count181
-\makeMPintoPDFobject=\count182
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count178
+\scratchdimen=\dimen259
+\scratchbox=\box55
+\nofMPsegments=\count179
+\nofMParguments=\count180
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count181
+\MPscratchDim=\dimen260
+\MPnumerator=\count182
+\makeMPintoPDFobject=\count183
+\everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1291,8 +1299,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 22.
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1300,73 +1308,73 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count183
+\c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./poster.out) (./poster.out)
 \@outlinefile=\write5
 \openout5 = `poster.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 22.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 24.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 22.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 22.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 22.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 22.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 22.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 22.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 22.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 22.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 22.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 22.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 22.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 22.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 22.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 22.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 22.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 24.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 24.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 22
+(Font)              `pureletters' in the math version `normal' on input line 24
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 22
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 24
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 22.
+(Font)              `pureletters' in the math version `bold' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 2
-2.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 22.
+ut line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1392,238 +1400,239 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 22.
-LaTeX Info: Redefining \degres on input line 22.
-LaTeX Info: Redefining \dots on input line 22.
-LaTeX Info: Redefining \up on input line 22.
+LaTeX Info: Redefining \includegraphics on input line 24.
+LaTeX Info: Redefining \degres on input line 24.
+LaTeX Info: Redefining \dots on input line 24.
+LaTeX Info: Redefining \up on input line 24.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./poster.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <16.8> not available
-(Font)              size <17.28> substituted on input line 22.
+(Font)              size <17.28> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <41.8> not available
-(Font)              size <42.99> substituted on input line 281.
+(Font)              size <42.99> substituted on input line 305.
 
 <rsc/logo_um.png, id=13, 71.0655pt x 71.0655pt>
 File: rsc/logo_um.png Graphic file (type png)
  <use rsc/logo_um.png>
-Package pdftex.def Info: rsc/logo_um.png used on input line 281.
+Package pdftex.def Info: rsc/logo_um.png used on input line 305.
 (pdftex.def)             Requested size: 233.21303pt x 233.22208pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <86.69> not available
-(Font)              size <51.59> substituted on input line 281.
+(Font)              size <51.59> substituted on input line 305.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <86.69> not available
-(Font)              size <51.59> substituted on input line 281.
+(Font)              size <51.59> substituted on input line 305.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <34.83> not available
-(Font)              size <35.83> substituted on input line 281.
+(Font)              size <35.83> substituted on input line 305.
 
 <rsc/logo_lirmm.png, id=15, 206.6922pt x 253.4268pt>
 File: rsc/logo_lirmm.png Graphic file (type png)
  <use rsc/logo_lirmm.png>
-Package pdftex.def Info: rsc/logo_lirmm.png used on input line 281.
+Package pdftex.def Info: rsc/logo_lirmm.png used on input line 305.
 (pdftex.def)             Requested size: 233.21303pt x 285.94745pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <41.8> not available
-(Font)              size <42.99> substituted on input line 281.
+(Font)              size <42.99> substituted on input line 305.
 
-<rsc/index_1.png, id=18, 963.6pt x 722.7pt>
+<rsc/index_1.png, id=18, 602.25pt x 319.1925pt>
 File: rsc/index_1.png Graphic file (type png)
  <use rsc/index_1.png>
-Package pdftex.def Info: rsc/index_1.png used on input line 281.
-(pdftex.def)             Requested size: 342.80957pt x 257.10616pt.
+Package pdftex.def Info: rsc/index_1.png used on input line 305.
+(pdftex.def)             Requested size: 342.80957pt x 181.6932pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <24.19> not available
-(Font)              size <24.88> substituted on input line 281.
+(Font)              size <24.88> substituted on input line 305.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <29.04> not available
-(Font)              size <29.86> substituted on input line 281.
+(Font)              size <29.86> substituted on input line 305.
 
-<rsc/index_2.png, id=19, 963.6pt x 722.7pt>
+<rsc/index_2.png, id=19, 602.25pt x 319.1925pt>
 File: rsc/index_2.png Graphic file (type png)
  <use rsc/index_2.png>
-Package pdftex.def Info: rsc/index_2.png used on input line 281.
-(pdftex.def)             Requested size: 342.80957pt x 257.10616pt.
+Package pdftex.def Info: rsc/index_2.png used on input line 305.
+(pdftex.def)             Requested size: 342.80957pt x 181.6932pt.
 
-<rsc/index_3.png, id=20, 963.6pt x 722.7pt>
+<rsc/index_3.png, id=20, 602.25pt x 319.1925pt>
 File: rsc/index_3.png Graphic file (type png)
  <use rsc/index_3.png>
-Package pdftex.def Info: rsc/index_3.png used on input line 281.
-(pdftex.def)             Requested size: 342.80957pt x 257.10616pt.
+Package pdftex.def Info: rsc/index_3.png used on input line 305.
+(pdftex.def)             Requested size: 342.80957pt x 181.6932pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 281.
+(Font)              using `T1/cmss/m/n' instead on input line 305.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <29.04> not available
-(Font)              size <29.86> substituted on input line 281.
+(Font)              size <29.86> substituted on input line 305.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <34.83> not available
-(Font)              size <35.83> substituted on input line 281.
+(Font)              size <35.83> substituted on input line 305.
 
-LaTeX Font Info:    Calculating math sizes for size <34.83> on input line 281.
+LaTeX Font Info:    Calculating math sizes for size <34.83> on input line 305.
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <24.38089> not available
-(Font)              size <24.88> substituted on input line 281.
+(Font)              size <24.88> substituted on input line 305.
 
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 281.
+line 305.
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<rsc/van_gogh.png, id=21, 803.0pt x 803.0pt>
+<rsc/van_gogh.png, id=21, 602.25pt x 602.25pt>
 File: rsc/van_gogh.png Graphic file (type png)
  <use rsc/van_gogh.png>
-Package pdftex.def Info: rsc/van_gogh.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+Package pdftex.def Info: rsc/van_gogh.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<rsc/van_gogh_800_12.png, id=22, 803.0pt x 803.0pt>
-File: rsc/van_gogh_800_12.png Graphic file (type png)
+<rsc/van_gogh_800.png, id=22, 602.25pt x 602.25pt>
+File: rsc/van_gogh_800.png Graphic file (type png)
+ <use rsc/van_gogh_800.png>
+Package pdftex.def Info: rsc/van_gogh_800.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<use rsc/van_gogh_800_12.png>
-Package pdftex.def Info: rsc/van_gogh_800_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<rsc/van_gogh_10.png, id=23, 602.25pt x 602.25pt>
+File: rsc/van_gogh_10.png Graphic file (type png)
+ <use rsc/van_gogh_10.png>
+Package pdftex.def Info: rsc/van_gogh_10.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<rsc/van_gogh_10_12.png, id=23, 803.0pt x 803.0pt>
-File: rsc/van_gogh_10_12.png Graphic file (type png)
+<rsc/van_gogh_25.png, id=24, 602.25pt x 602.25pt>
+File: rsc/van_gogh_25.png Graphic file (type png)
+ <use rsc/van_gogh_25.png>
+Package pdftex.def Info: rsc/van_gogh_25.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<use rsc/van_gogh_10_12.png>
-Package pdftex.def Info: rsc/van_gogh_10_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<rsc/van_gogh_50.png, id=25, 602.25pt x 602.25pt>
+File: rsc/van_gogh_50.png Graphic file (type png)
+ <use rsc/van_gogh_50.png>
+Package pdftex.def Info: rsc/van_gogh_50.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<rsc/van_gogh_25_12.png, id=24, 803.0pt x 803.0pt>
-File: rsc/van_gogh_25_12.png Graphic file (type png)
+<rsc/van_gogh_10_a.png, id=26, 602.25pt x 602.25pt>
+File: rsc/van_gogh_10_a.png Graphic file (type png)
 
-<use rsc/van_gogh_25_12.png>
-Package pdftex.def Info: rsc/van_gogh_25_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<use rsc/van_gogh_10_a.png>
+Package pdftex.def Info: rsc/van_gogh_10_a.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<rsc/van_gogh_50_12.png, id=25, 803.0pt x 803.0pt>
-File: rsc/van_gogh_50_12.png Graphic file (type png)
+<rsc/van_gogh_25_a.png, id=27, 602.25pt x 602.25pt>
+File: rsc/van_gogh_25_a.png Graphic file (type png)
 
-<use rsc/van_gogh_50_12.png>
-Package pdftex.def Info: rsc/van_gogh_50_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<use rsc/van_gogh_25_a.png>
+Package pdftex.def Info: rsc/van_gogh_25_a.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<rsc/van_gogh_a_10_12.png, id=26, 803.0pt x 803.0pt>
-File: rsc/van_gogh_a_10_12.png Graphic file (type png)
+<rsc/van_gogh_50_a.png, id=28, 602.25pt x 602.25pt>
+File: rsc/van_gogh_50_a.png Graphic file (type png)
 
-<use rsc/van_gogh_a_10_12.png>
-Package pdftex.def Info: rsc/van_gogh_a_10_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<use rsc/van_gogh_50_a.png>
+Package pdftex.def Info: rsc/van_gogh_50_a.png used on input line 305.
+(pdftex.def)             Requested size: 211.39429pt x 211.39716pt.
 
-<rsc/van_gogh_a_25_12.png, id=27, 803.0pt x 803.0pt>
-File: rsc/van_gogh_a_25_12.png Graphic file (type png)
-
-<use rsc/van_gogh_a_25_12.png>
-Package pdftex.def Info: rsc/van_gogh_a_25_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
-
-<rsc/van_gogh_a_50_12.png, id=28, 803.0pt x 803.0pt>
-File: rsc/van_gogh_a_50_12.png Graphic file (type png)
-
-<use rsc/van_gogh_a_50_12.png>
-Package pdftex.def Info: rsc/van_gogh_a_50_12.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
-
-<rsc/psnr_ressemblance.png, id=29, 1026.83624pt x 489.32813pt>
+<rsc/psnr_ressemblance.png, id=29, 451.6875pt x 299.61937pt>
 File: rsc/psnr_ressemblance.png Graphic file (type png)
 
 <use rsc/psnr_ressemblance.png>
-Package pdftex.def Info: rsc/psnr_ressemblance.png used on input line 281.
-(pdftex.def)             Requested size: 571.34348pt x 272.26724pt.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 281
+Package pdftex.def Info: rsc/psnr_ressemblance.png used on input line 305.
+(pdftex.def)             Requested size: 571.34348pt x 379.04024pt.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 305
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 281.
+LaTeX Font Info:    No file OMScmss.fd. on input line 305.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 281.
+(Font)              for symbol `textbullet' on input line 305.
 
-<rsc/formule_transformation.png, id=30, 965.6075pt x 602.25pt>
+<rsc/formule_transformation.png, id=30, 451.6875pt x 225.84375pt>
 File: rsc/formule_transformation.png Graphic file (type png)
 
 <use rsc/formule_transformation.png>
-Package pdftex.def Info: rsc/formule_transformation.png used on input line 281.
+Package pdftex.def Info: rsc/formule_transformation.png used on input line 305.
 
-(pdftex.def)             Requested size: 571.34348pt x 356.36284pt.
+(pdftex.def)             Requested size: 457.06781pt x 228.54836pt.
 
-<rsc/van_gogh_25.png, id=31, 803.0pt x 803.0pt>
-File: rsc/van_gogh_25.png Graphic file (type png)
- <use rsc/van_gogh_25.png>
-Package pdftex.def Info: rsc/van_gogh_25.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<rsc/van_gogh_10_p.png, id=31, 602.25pt x 602.25pt>
+File: rsc/van_gogh_10_p.png Graphic file (type png)
 
-<rsc/van_gogh_40.png, id=32, 803.0pt x 803.0pt>
-File: rsc/van_gogh_40.png Graphic file (type png)
- <use rsc/van_gogh_40.png>
-Package pdftex.def Info: rsc/van_gogh_40.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<use rsc/van_gogh_10_p.png>
+Package pdftex.def Info: rsc/van_gogh_10_p.png used on input line 305.
+(pdftex.def)             Requested size: 285.67174pt x 285.68575pt.
 
-<rsc/van_gogh_50.png, id=33, 803.0pt x 803.0pt>
-File: rsc/van_gogh_50.png Graphic file (type png)
- <use rsc/van_gogh_50.png>
-Package pdftex.def Info: rsc/van_gogh_50.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<rsc/van_gogh_40_p.png, id=32, 602.25pt x 602.25pt>
+File: rsc/van_gogh_40_p.png Graphic file (type png)
 
-<rsc/van_gogh_25_d_a.png, id=34, 803.0pt x 803.0pt>
-File: rsc/van_gogh_25_d_a.png Graphic file (type png)
+<use rsc/van_gogh_40_p.png>
+Package pdftex.def Info: rsc/van_gogh_40_p.png used on input line 305.
+(pdftex.def)             Requested size: 285.67174pt x 285.68575pt.
 
-<use rsc/van_gogh_25_d_a.png>
-Package pdftex.def Info: rsc/van_gogh_25_d_a.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+<rsc/van_gogh_50_p.png, id=33, 602.25pt x 602.25pt>
+File: rsc/van_gogh_50_p.png Graphic file (type png)
 
-<rsc/van_gogh_40_d_a.png, id=35, 803.0pt x 803.0pt>
+<use rsc/van_gogh_50_p.png>
+Package pdftex.def Info: rsc/van_gogh_50_p.png used on input line 305.
+(pdftex.def)             Requested size: 285.67174pt x 285.68575pt.
+
+<rsc/van_gogh_10_d_a.png, id=34, 602.25pt x 602.25pt>
+File: rsc/van_gogh_10_d_a.png Graphic file (type png)
+
+<use rsc/van_gogh_10_d_a.png>
+Package pdftex.def Info: rsc/van_gogh_10_d_a.png used on input line 305.
+(pdftex.def)             Requested size: 285.67174pt x 285.68575pt.
+
+<rsc/van_gogh_40_d_a.png, id=35, 602.25pt x 602.25pt>
 File: rsc/van_gogh_40_d_a.png Graphic file (type png)
 
 <use rsc/van_gogh_40_d_a.png>
-Package pdftex.def Info: rsc/van_gogh_40_d_a.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+Package pdftex.def Info: rsc/van_gogh_40_d_a.png used on input line 305.
+(pdftex.def)             Requested size: 285.67174pt x 285.68575pt.
 
-<rsc/van_gogh_50_d_a.png, id=36, 803.0pt x 803.0pt>
+<rsc/van_gogh_50_d_a.png, id=36, 602.25pt x 602.25pt>
 File: rsc/van_gogh_50_d_a.png Graphic file (type png)
 
 <use rsc/van_gogh_50_d_a.png>
-Package pdftex.def Info: rsc/van_gogh_50_d_a.png used on input line 281.
-(pdftex.def)             Requested size: 285.67174pt x 285.67351pt.
+Package pdftex.def Info: rsc/van_gogh_50_d_a.png used on input line 305.
+(pdftex.def)             Requested size: 285.67174pt x 285.68575pt.
 
-<rsc/psnr_lecture.png, id=37, 481.8pt x 361.35pt>
+<rsc/psnr_lecture.png, id=37, 451.6875pt x 338.76563pt>
 File: rsc/psnr_lecture.png Graphic file (type png)
- <use rsc/psnr_lecture.png>
-Package pdftex.def Info: rsc/psnr_lecture.png used on input line 281.
-(pdftex.def)             Requested size: 571.34348pt x 428.5507pt.
+
+<use rsc/psnr_lecture.png>
+Package pdftex.def Info: rsc/psnr_lecture.png used on input line 305.
+(pdftex.def)             Requested size: 571.34348pt x 428.56308pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 281.
+(Font)              size <5> substituted on input line 305.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./rsc/logo_um.png> <./rsc/
 logo_lirmm.png> <./rsc/index_1.png> <./rsc/index_2.png> <./rsc/index_3.png> <./
-rsc/van_gogh.png (PNG copy)> <./rsc/van_gogh_800_12.png (PNG copy)> <./rsc/van_
-gogh_10_12.png (PNG copy)> <./rsc/van_gogh_25_12.png (PNG copy)> <./rsc/van_gog
-h_50_12.png (PNG copy)> <./rsc/van_gogh_a_10_12.png (PNG copy)> <./rsc/van_gogh
-_a_25_12.png (PNG copy)> <./rsc/van_gogh_a_50_12.png (PNG copy)> <./rsc/psnr_re
-ssemblance.png (PNG copy)> <./rsc/formule_transformation.png> <./rsc/van_gogh_2
-5.png (PNG copy)> <./rsc/van_gogh_40.png (PNG copy)> <./rsc/van_gogh_50.png (PN
-G copy)> <./rsc/van_gogh_25_d_a.png> <./rsc/van_gogh_40_d_a.png (PNG copy)> <./
-rsc/van_gogh_50_d_a.png> <./rsc/psnr_lecture.png (PNG copy)>]
+rsc/van_gogh.png (PNG copy)> <./rsc/van_gogh_800.png (PNG copy)> <./rsc/van_gog
+h_10.png (PNG copy)> <./rsc/van_gogh_25.png (PNG copy)> <./rsc/van_gogh_50.png 
+(PNG copy)> <./rsc/van_gogh_10_a.png (PNG copy)> <./rsc/van_gogh_25_a.png (PNG 
+copy)> <./rsc/van_gogh_50_a.png (PNG copy)> <./rsc/psnr_ressemblance.png (PNG c
+opy)> <./rsc/formule_transformation.png> <./rsc/van_gogh_10_p.png (PNG copy)> <
+./rsc/van_gogh_40_p.png (PNG copy)> <./rsc/van_gogh_50_p.png (PNG copy)> <./rsc
+/van_gogh_10_d_a.png (PNG copy)> <./rsc/van_gogh_40_d_a.png (PNG copy)> <./rsc/
+van_gogh_50_d_a.png (PNG copy)> <./rsc/psnr_lecture.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `poster.nav'.
 
@@ -1633,11 +1642,12 @@ rsc/van_gogh_50_d_a.png> <./rsc/psnr_lecture.png (PNG copy)>]
 \tf@snm=\write8
 \openout8 = `poster.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
- (./poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
+
+(./poster.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
 Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1648,16 +1658,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 20613 strings out of 493029
- 376784 string characters out of 6136234
- 533414 words of memory out of 5000000
- 23640 multiletter control sequences out of 15000+600000
+ 20672 strings out of 493029
+ 377492 string characters out of 6136234
+ 553961 words of memory out of 5000000
+ 23695 multiletter control sequences out of 15000+600000
  18592 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,15n,102p,386b,1323s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,15n,102p,386b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/arnaud/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecsx4299.600pk> </home/arnaud/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecsx5159.600pk></usr/share/texlive/texmf-dist/fonts/t
@@ -1666,7 +1676,7 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfs
 s2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2986.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfsx3583.pfb>
-Output written on poster.pdf (1 page, 9252569 bytes).
+Output written on poster.pdf (1 page, 6146459 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
