@@ -3,9 +3,13 @@
 \beamer@sectionintoc {1}{Introduction}{5}{0}{1}
 \beamer@subsectionintoc {1}{1}{Cahier des charges}{5}{0}{1}
 \beamer@subsectionintoc {1}{2}{\IeC {\'E}tude bibliographique}{7}{0}{1}
-\beamer@sectionintoc {2}{D\IeC {\'e}veloppement}{18}{0}{2}
-\beamer@subsectionintoc {2}{1}{Chiffrement d'une image}{18}{0}{2}
-\beamer@subsectionintoc {2}{2}{Lecture d'une image}{25}{0}{2}
-\beamer@subsectionintoc {2}{3}{Analyse des r\IeC {\'e}sultats}{36}{0}{2}
-\beamer@sectionintoc {3}{Gestion et d\IeC {\'e}roulement du projet}{39}{0}{3}
-\beamer@subsectionintoc {3}{1}{Ouilts de gestion}{39}{0}{3}
+\beamer@sectionintoc {2}{D\IeC {\'e}veloppement}{23}{0}{2}
+\beamer@subsectionintoc {2}{1}{Chiffrement d'une image}{23}{0}{2}
+\beamer@subsectionintoc {2}{2}{Lecture d'une image}{31}{0}{2}
+\beamer@subsectionintoc {2}{3}{Analyse des r\IeC {\'e}sultats}{38}{0}{2}
+\beamer@subsectionintoc {2}{4}{Portage sous mobile}{41}{0}{2}
+\beamer@sectionintoc {3}{Gestion et d\IeC {\'e}roulement du projet}{46}{0}{3}
+\beamer@subsectionintoc {3}{1}{Planning}{46}{0}{3}
+\beamer@subsectionintoc {3}{2}{Donn\IeC {\'e}es quantitatives}{49}{0}{3}
+\beamer@subsectionintoc {3}{3}{Analyse du risque}{52}{0}{3}
+\beamer@subsectionintoc {3}{4}{Probl\IeC {\`e}mes et suite}{54}{0}{3}

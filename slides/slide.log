@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.21)  7 MAY 2018 09:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.18)  29 MAY 2018 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,6 +1091,30 @@ Package caption Info: Hyperref support is turned off
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip68
+\UL@hook=\toks46
+\UL@height=\dimen199
+\UL@pe=\count164
+\UL@pixel=\dimen256
+\ULC@box=\box55
+Package: ulem 2012/05/18
+\ULdepth=\dimen257
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks47
+\SOUL@lasttoken=\toks48
+\SOUL@cmds=\toks49
+\SOUL@buffer=\toks50
+\SOUL@token=\toks51
+\SOUL@spaceskip=\skip69
+\SOUL@ttwidth=\dimen258
+\SOUL@uldp=\dimen259
+\SOUL@ulht=\dimen260
+)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemePaloAlt
 o.sty
 Package: beamerthemePaloAlto 2010/06/17  (rcs-revision d02a7cf4d8ae)
@@ -1098,8 +1122,8 @@ Package: beamerthemePaloAlto 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesi
 debar.sty
 Package: beamerouterthemesidebar 2010/06/17  (rcs-revision d02a7cf4d8ae)
-\beamer@sidebarwidth=\dimen199
-\beamer@headheight=\dimen256
+\beamer@sidebarwidth=\dimen261
+\beamer@headheight=\dimen262
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemero
 unded.sty
@@ -1115,30 +1139,30 @@ Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 12.
+(hyperref)                removing `\\' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 12.
+(hyperref)                removing `\\' on input line 14.
 
 (./slide.aux (./sections/1_introduction.aux) (./sections/2_developpement.aux)
-(./sections/3_gestion.aux) (./sections/reference.aux))
+(./sections/3_gestion.aux))
 \openout1 = `slide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1148,14 +1172,14 @@ LaTeX Font Info:    ... okay on input line 32.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(59.22636pt, 290.74263pt, 14.22636pt)
+* h-part:(L,W,R)=(73.97731pt, 275.99168pt, 14.22636pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=290.74263pt
+* \textwidth=275.99168pt
 * \textheight=244.6939pt
-* \oddsidemargin=-13.04362pt
-* \evensidemargin=-13.04362pt
+* \oddsidemargin=1.70732pt
+* \evensidemargin=1.70732pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1176,17 +1200,17 @@ LaTeX Font Info:    ... okay on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
-\scratchdimen=\dimen257
-\scratchbox=\box53
-\nofMPsegments=\count165
-\nofMParguments=\count166
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count167
-\MPscratchDim=\dimen258
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count165
+\scratchdimen=\dimen263
+\scratchbox=\box56
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen264
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1203,8 +1227,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 32.
+\AtBeginShipoutBox=\box57
+Package hyperref Info: Link coloring OFF on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1212,73 +1236,73 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count170
+\c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./slide.out) (./slide.out)
 \@outlinefile=\write5
 \openout5 = `slide.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 34.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 32.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 32.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 32.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 32.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 32.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 32.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 34.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 32.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 34.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 32
+(Font)              `pureletters' in the math version `normal' on input line 34
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 32
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 34
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 32.
+(Font)              `pureletters' in the math version `bold' on input line 34.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
-2.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 32.
+ut line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1304,77 +1328,44 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 32.
-LaTeX Info: Redefining \degres on input line 32.
-LaTeX Info: Redefining \dots on input line 32.
-LaTeX Info: Redefining \up on input line 32.
+LaTeX Info: Redefining \includegraphics on input line 34.
+LaTeX Info: Redefining \degres on input line 34.
+LaTeX Info: Redefining \dots on input line 34.
+LaTeX Info: Redefining \up on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./slide.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 36.
-
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+(Font)              size <5> substituted on input line 38.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+] (./slide.toc) [2
 
-[2
+]
+(./slide.toc) [3
 
-] (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[3
-
-] (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[4
+] (./slide.toc) [4
 
 ]
 \openout2 = `./sections/1_introduction.aux'.
 
- (./sections/1_introduction.tex (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+ (./sections/1_introduction.tex (./slide.toc) [5
 
-[5
 
+] [6
+
+] (./slide.toc) [7
 
 ]
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[6
-
-] (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[7
-
-] <rsc/symetrique.png, id=374, 405.76593pt x 135.50626pt>
+<rsc/symetrique.png, id=443, 405.76593pt x 135.50626pt>
 File: rsc/symetrique.png Graphic file (type png)
 
 <use rsc/symetrique.png>
 Package pdftex.def Info: rsc/symetrique.png used on input line 27.
-(pdftex.def)             Requested size: 232.59499pt x 77.67769pt.
+(pdftex.def)             Requested size: 275.99168pt x 92.16989pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1392,616 +1383,644 @@ line 27.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
+Overfull \hbox (11.71861pt too wide) in paragraph at lines 27--27
+[][][]\T1/cmss/m/n/8 http ://igm.univ-mlv.fr/ dr/XPOSE2007/vma_PKI/concepts_de_
+base.html|[][] 
+ []
+
+
+Overfull \hbox (2.16661pt too wide) in paragraph at lines 27--27
+ [][][] 
  []
 
 [8
 
  <./rsc/symetrique.png>]
-<rsc/asymetrique_1.png, id=411, 602.25pt x 322.20375pt>
+<rsc/asymetrique_1.png, id=485, 602.25pt x 322.20375pt>
 File: rsc/asymetrique_1.png Graphic file (type png)
 
 <use rsc/asymetrique_1.png>
 Package pdftex.def Info: rsc/asymetrique_1.png used on input line 42.
-(pdftex.def)             Requested size: 116.29527pt x 62.21738pt.
+(pdftex.def)             Requested size: 110.39499pt x 59.06104pt.
 
-<rsc/asymetrique_2.png, id=413, 602.25pt x 403.5075pt>
+<rsc/asymetrique_2.png, id=487, 602.25pt x 403.5075pt>
 File: rsc/asymetrique_2.png Graphic file (type png)
 
 <use rsc/asymetrique_2.png>
 Package pdftex.def Info: rsc/asymetrique_2.png used on input line 42.
-(pdftex.def)             Requested size: 116.29527pt x 77.91708pt.
+(pdftex.def)             Requested size: 110.39499pt x 73.96428pt.
+ [9
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[9
-
- <./rsc/asymetrique_1.png> <./rsc/asymetrique_2.png>]
-<rsc/authentification.png, id=451, 602.25pt x 210.7875pt>
+ <./rsc/asymetrique_1.png> <./rsc/asymetrique_2.png>] <rsc/authentification.png
+, id=529, 602.25pt x 210.7875pt>
 File: rsc/authentification.png Graphic file (type png)
 
 <use rsc/authentification.png>
 Package pdftex.def Info: rsc/authentification.png used on input line 49.
-(pdftex.def)             Requested size: 232.59499pt x 81.40913pt.
+(pdftex.def)             Requested size: 275.99168pt x 96.59998pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
+Overfull \hbox (2.16661pt too wide) in paragraph at lines 49--49
+ [][][] 
  []
 
 [10
 
  <./rsc/authentification.png>]
-<rsc/tab_base.png, id=488, 120.45pt x 119.44624pt>
+<rsc/tab_base.png, id=569, 120.45pt x 119.44624pt>
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 
-<rsc/tab_permutation.png, id=489, 120.45pt x 119.44624pt>
+<rsc/tab_permutation.png, id=570, 120.45pt x 119.44624pt>
 File: rsc/tab_permutation.png Graphic file (type png)
 
 <use rsc/tab_permutation.png>
-Package pdftex.def Info: rsc/tab_permutation.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_permutation.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 
-<rsc/tab_substitution.png, id=490, 120.45pt x 119.44624pt>
+<rsc/tab_substitution.png, id=571, 120.45pt x 119.44624pt>
 File: rsc/tab_substitution.png Graphic file (type png)
 
 <use rsc/tab_substitution.png>
-Package pdftex.def Info: rsc/tab_substitution.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[11
+Package pdftex.def Info: rsc/tab_substitution.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
+ [11
 
  <./rsc/tab_base.png> <./rsc/tab_permutation.png> <./rsc/tab_substitution.png>]
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_permutation.png Graphic file (type png)
- <use rsc/tab_permutation.png>
-Package pdftex.def Info: rsc/tab_permutation.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+
+<use rsc/tab_permutation.png>
+Package pdftex.def Info: rsc/tab_permutation.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_base.png Graphic file (type png)
-
-<use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+ <use rsc/tab_base.png>
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_substitution.png Graphic file (type png)
- <use rsc/tab_substitution.png>
-Package pdftex.def Info: rsc/tab_substitution.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[12
+<use rsc/tab_substitution.png>
+Package pdftex.def Info: rsc/tab_substitution.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
+ [12
 
 ]
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_permutation.png Graphic file (type png)
- <use rsc/tab_permutation.png>
-Package pdftex.def Info: rsc/tab_permutation.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+
+<use rsc/tab_permutation.png>
+Package pdftex.def Info: rsc/tab_permutation.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_base.png Graphic file (type png)
-
-<use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+ <use rsc/tab_base.png>
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_substitution.png Graphic file (type png)
- <use rsc/tab_substitution.png>
-Package pdftex.def Info: rsc/tab_substitution.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[13
+<use rsc/tab_substitution.png>
+Package pdftex.def Info: rsc/tab_substitution.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
+ [13
 
 ]
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_permutation.png Graphic file (type png)
- <use rsc/tab_permutation.png>
-Package pdftex.def Info: rsc/tab_permutation.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+
+<use rsc/tab_permutation.png>
+Package pdftex.def Info: rsc/tab_permutation.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_base.png Graphic file (type png)
-
-<use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+ <use rsc/tab_base.png>
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_substitution.png Graphic file (type png)
- <use rsc/tab_substitution.png>
-Package pdftex.def Info: rsc/tab_substitution.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[14
+<use rsc/tab_substitution.png>
+Package pdftex.def Info: rsc/tab_substitution.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
+ [14
 
 ]
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_permutation.png Graphic file (type png)
- <use rsc/tab_permutation.png>
-Package pdftex.def Info: rsc/tab_permutation.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+
+<use rsc/tab_permutation.png>
+Package pdftex.def Info: rsc/tab_permutation.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_base.png Graphic file (type png)
-
-<use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+ <use rsc/tab_base.png>
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_substitution.png Graphic file (type png)
- <use rsc/tab_substitution.png>
-Package pdftex.def Info: rsc/tab_substitution.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[15
+<use rsc/tab_substitution.png>
+Package pdftex.def Info: rsc/tab_substitution.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
+ [15
 
 ]
 File: rsc/tab_base.png Graphic file (type png)
  <use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_permutation.png Graphic file (type png)
- <use rsc/tab_permutation.png>
-Package pdftex.def Info: rsc/tab_permutation.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+
+<use rsc/tab_permutation.png>
+Package pdftex.def Info: rsc/tab_permutation.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_base.png Graphic file (type png)
-
-<use rsc/tab_base.png>
-Package pdftex.def Info: rsc/tab_base.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
+ <use rsc/tab_base.png>
+Package pdftex.def Info: rsc/tab_base.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
 File: rsc/tab_substitution.png Graphic file (type png)
- <use rsc/tab_substitution.png>
-Package pdftex.def Info: rsc/tab_substitution.png used on input line 87.
-(pdftex.def)             Requested size: 69.77786pt x 69.19865pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[16
+<use rsc/tab_substitution.png>
+Package pdftex.def Info: rsc/tab_substitution.png used on input line 90.
+(pdftex.def)             Requested size: 66.23766pt x 65.68651pt.
+ [16
 
 ]
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+<./rsc/des.png, id=813, 198.7425pt x 272.01625pt>
+File: ./rsc/des.png Graphic file (type png)
+ <use ./rsc/des.png>
+Package pdftex.def Info: ./rsc/des.png used on input line 100.
+(pdftex.def)             Requested size: 82.79834pt x 113.32875pt.
+ [17
 
-[17
+ <./rsc/des.png (PNG copy)>] <./rsc/aes.png, id=853, 454.69875pt x 265.99374pt>
+File: ./rsc/aes.png Graphic file (type png)
 
-])
-\openout2 = `./sections/2_developpement.aux'.
+<use ./rsc/aes.png>
+Package pdftex.def Info: ./rsc/aes.png used on input line 110.
+(pdftex.def)             Requested size: 193.19333pt x 113.0154pt.
 
- (./sections/2_developpement.tex (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[][][]\T1/cmss/m/n/8 http ://www.bibmath.net/crypto/index.php ?ac-
  []
 
 [18
 
+ <./rsc/aes.png (PNG copy)>]
+<./rsc/rsa.png, id=893, 357.335pt x 235.88126pt>
+File: ./rsc/rsa.png Graphic file (type png)
+ <use ./rsc/rsa.png>
+Package pdftex.def Info: ./rsc/rsa.png used on input line 120.
+(pdftex.def)             Requested size: 165.59668pt x 109.31293pt.
+ [19
 
+ <./rsc/rsa.png (PNG copy)>] <./rsc/arnold.png, id=935, 221.82875pt x 319.1925p
+t>
+File: ./rsc/arnold.png Graphic file (type png)
 
-] <./rsc/index_1_1.png, id=787, 602.25pt x 319.1925pt>
-File: ./rsc/index_1_1.png Graphic file (type png)
+<use ./rsc/arnold.png>
+Package pdftex.def Info: ./rsc/arnold.png used on input line 140.
+(pdftex.def)             Requested size: 96.59877pt x 138.99373pt.
 
-<use ./rsc/index_1_1.png>
-Package pdftex.def Info: ./rsc/index_1_1.png used on input line 18.
-(pdftex.def)             Requested size: 145.3713pt x 77.0461pt.
- <./rsc/index_1_2.png, id=788, 602.25pt x 319.1925pt>
-File: ./rsc/index_1_2.png Graphic file (type png)
-
-<use ./rsc/index_1_2.png>
-Package pdftex.def Info: ./rsc/index_1_2.png used on input line 18.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
- <./rsc/index_1_3.png, id=789, 602.25pt x 319.1925pt>
-File: ./rsc/index_1_3.png Graphic file (type png)
-
-<use ./rsc/index_1_3.png>
-Package pdftex.def Info: ./rsc/index_1_3.png used on input line 18.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[19
-
- <./rsc/index_1_1.png> <./rsc/index_1_2.png> <./rsc/index_1_3.png>]
-File: ./rsc/index_1_1.png Graphic file (type png)
-
-<use ./rsc/index_1_1.png>
-Package pdftex.def Info: ./rsc/index_1_1.png used on input line 18.
-(pdftex.def)             Requested size: 145.3713pt x 77.0461pt.
-File: ./rsc/index_1_2.png Graphic file (type png)
- <use ./rsc/index_1_2.png>
-Package pdftex.def Info: ./rsc/index_1_2.png used on input line 18.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
-File: ./rsc/index_1_3.png Graphic file (type png)
- <use ./rsc/index_1_3.png>
-Package pdftex.def Info: ./rsc/index_1_3.png used on input line 18.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
+Overfull \vbox (16.8967pt too high) detected at line 140
  []
 
 [20
 
-]
+ <./rsc/arnold.png (PNG copy)>]
+<./rsc/baker.png, id=979, 345.29pt x 193.72375pt>
+File: ./rsc/baker.png Graphic file (type png)
+ <use ./rsc/baker.png>
+Package pdftex.def Info: ./rsc/baker.png used on input line 151.
+(pdftex.def)             Requested size: 220.79417pt x 123.87634pt.
+
+[21
+
+ <./rsc/baker.png (PNG copy)>] [22
+
+])
+\openout2 = `./sections/2_developpement.aux'.
+
+ (./sections/2_developpement.tex
+(./slide.toc) [23
+
+
+
+] <./rsc/index_1_1.png, id=1115, 602.25pt x 319.1925pt>
 File: ./rsc/index_1_1.png Graphic file (type png)
- <use ./rsc/index_1_1.png>
+
+<use ./rsc/index_1_1.png>
 Package pdftex.def Info: ./rsc/index_1_1.png used on input line 18.
-(pdftex.def)             Requested size: 145.3713pt x 77.0461pt.
+(pdftex.def)             Requested size: 137.99583pt x 73.1351pt.
+
+<./rsc/index_1_2.png, id=1116, 602.25pt x 319.1925pt>
 File: ./rsc/index_1_2.png Graphic file (type png)
- <use ./rsc/index_1_2.png>
+
+<use ./rsc/index_1_2.png>
 Package pdftex.def Info: ./rsc/index_1_2.png used on input line 18.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+
+<./rsc/index_1_3.png, id=1117, 602.25pt x 319.1925pt>
 File: ./rsc/index_1_3.png Graphic file (type png)
 
 <use ./rsc/index_1_3.png>
 Package pdftex.def Info: ./rsc/index_1_3.png used on input line 18.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+ [24
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+ <./rsc/index_1_1.png> <./rsc/index_1_2.png> <./rsc/index_1_3.png>]
+File: ./rsc/index_1_1.png Graphic file (type png)
+ <use ./rsc/index_1_1.png>
+Package pdftex.def Info: ./rsc/index_1_1.png used on input line 18.
+(pdftex.def)             Requested size: 137.99583pt x 73.1351pt.
+File: ./rsc/index_1_2.png Graphic file (type png)
+ <use ./rsc/index_1_2.png>
+Package pdftex.def Info: ./rsc/index_1_2.png used on input line 18.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+File: ./rsc/index_1_3.png Graphic file (type png)
 
-[21
+<use ./rsc/index_1_3.png>
+Package pdftex.def Info: ./rsc/index_1_3.png used on input line 18.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+ [25
 
 ]
 File: ./rsc/index_1_1.png Graphic file (type png)
  <use ./rsc/index_1_1.png>
-Package pdftex.def Info: ./rsc/index_1_1.png used on input line 33.
-(pdftex.def)             Requested size: 145.3713pt x 77.0461pt.
+Package pdftex.def Info: ./rsc/index_1_1.png used on input line 18.
+(pdftex.def)             Requested size: 137.99583pt x 73.1351pt.
 File: ./rsc/index_1_2.png Graphic file (type png)
- <use ./rsc/index_1_2.png>
-Package pdftex.def Info: ./rsc/index_1_2.png used on input line 33.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
+
+<use ./rsc/index_1_2.png>
+Package pdftex.def Info: ./rsc/index_1_2.png used on input line 18.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
 File: ./rsc/index_1_3.png Graphic file (type png)
-
-<use ./rsc/index_1_3.png>
-Package pdftex.def Info: ./rsc/index_1_3.png used on input line 33.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[22
+ <use ./rsc/index_1_3.png>
+Package pdftex.def Info: ./rsc/index_1_3.png used on input line 18.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+ [26
 
 ]
-File: ./rsc/index_1_1.png Graphic file (type png)
- <use ./rsc/index_1_1.png>
-Package pdftex.def Info: ./rsc/index_1_1.png used on input line 33.
-(pdftex.def)             Requested size: 145.3713pt x 77.0461pt.
-File: ./rsc/index_1_2.png Graphic file (type png)
- <use ./rsc/index_1_2.png>
-Package pdftex.def Info: ./rsc/index_1_2.png used on input line 33.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
-File: ./rsc/index_1_3.png Graphic file (type png)
+<./rsc/van_gogh.png, id=1241, 602.25pt x 602.25pt>
+File: ./rsc/van_gogh.png Graphic file (type png)
+ <use ./rsc/van_gogh.png>
+Package pdftex.def Info: ./rsc/van_gogh.png used on input line 34.
+(pdftex.def)             Requested size: 137.99583pt x 137.99077pt.
 
-<use ./rsc/index_1_3.png>
-Package pdftex.def Info: ./rsc/index_1_3.png used on input line 33.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
+<./rsc/van_gogh_40.png, id=1242, 602.25pt x 602.25pt>
+File: ./rsc/van_gogh_40.png Graphic file (type png)
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+<use ./rsc/van_gogh_40.png>
+Package pdftex.def Info: ./rsc/van_gogh_40.png used on input line 34.
+(pdftex.def)             Requested size: 137.99583pt x 137.99077pt.
+ [27
 
-[23
+ <./rsc/van_gogh.png (PNG copy)> <./rsc/van_gogh_40.png (PNG copy)>] <./rsc/ind
+ex_2_1.png, id=1282, 602.25pt x 319.1925pt>
+File: ./rsc/index_2_1.png Graphic file (type png)
+
+<use ./rsc/index_2_1.png>
+Package pdftex.def Info: ./rsc/index_2_1.png used on input line 49.
+(pdftex.def)             Requested size: 137.99583pt x 73.1351pt.
+
+<./rsc/index_2_2.png, id=1283, 602.25pt x 319.1925pt>
+File: ./rsc/index_2_2.png Graphic file (type png)
+
+<use ./rsc/index_2_2.png>
+Package pdftex.def Info: ./rsc/index_2_2.png used on input line 49.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+
+<./rsc/index_2_3.png, id=1284, 602.25pt x 319.1925pt>
+File: ./rsc/index_2_3.png Graphic file (type png)
+
+<use ./rsc/index_2_3.png>
+Package pdftex.def Info: ./rsc/index_2_3.png used on input line 49.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+ [28
+
+ <./rsc/index_2_1.png> <./rsc/index_2_2.png> <./rsc/index_2_3.png>]
+File: ./rsc/index_2_1.png Graphic file (type png)
+ <use ./rsc/index_2_1.png>
+Package pdftex.def Info: ./rsc/index_2_1.png used on input line 49.
+(pdftex.def)             Requested size: 137.99583pt x 73.1351pt.
+File: ./rsc/index_2_2.png Graphic file (type png)
+ <use ./rsc/index_2_2.png>
+Package pdftex.def Info: ./rsc/index_2_2.png used on input line 49.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+File: ./rsc/index_2_3.png Graphic file (type png)
+
+<use ./rsc/index_2_3.png>
+Package pdftex.def Info: ./rsc/index_2_3.png used on input line 49.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+ [29
 
 ]
-File: ./rsc/index_1_1.png Graphic file (type png)
- <use ./rsc/index_1_1.png>
-Package pdftex.def Info: ./rsc/index_1_1.png used on input line 33.
-(pdftex.def)             Requested size: 145.3713pt x 77.0461pt.
-File: ./rsc/index_1_2.png Graphic file (type png)
- <use ./rsc/index_1_2.png>
-Package pdftex.def Info: ./rsc/index_1_2.png used on input line 33.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
-File: ./rsc/index_1_3.png Graphic file (type png)
+File: ./rsc/index_2_1.png Graphic file (type png)
+ <use ./rsc/index_2_1.png>
+Package pdftex.def Info: ./rsc/index_2_1.png used on input line 49.
+(pdftex.def)             Requested size: 137.99583pt x 73.1351pt.
+File: ./rsc/index_2_2.png Graphic file (type png)
 
-<use ./rsc/index_1_3.png>
-Package pdftex.def Info: ./rsc/index_1_3.png used on input line 33.
-(pdftex.def)             Requested size: 130.83328pt x 69.341pt.
+<use ./rsc/index_2_2.png>
+Package pdftex.def Info: ./rsc/index_2_2.png used on input line 49.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+File: ./rsc/index_2_3.png Graphic file (type png)
+ <use ./rsc/index_2_3.png>
+Package pdftex.def Info: ./rsc/index_2_3.png used on input line 49.
+(pdftex.def)             Requested size: 124.1954pt x 65.81964pt.
+ [30
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+] (./slide.toc) [31
 
-[24
-
-] (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[25
-
-] <./rsc/40.png, id=1050, 602.25pt x 602.25pt>
+]
+<./rsc/40.png, id=1459, 602.25pt x 602.25pt>
 File: ./rsc/40.png Graphic file (type png)
  <use ./rsc/40.png>
-Package pdftex.def Info: ./rsc/40.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
+Package pdftex.def Info: ./rsc/40.png used on input line 74.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 
-<./rsc/gray_scale.png, id=1051, 602.25pt x 602.25pt>
+<./rsc/gray_scale.png, id=1460, 602.25pt x 602.25pt>
 File: ./rsc/gray_scale.png Graphic file (type png)
 
 <use ./rsc/gray_scale.png>
-Package pdftex.def Info: ./rsc/gray_scale.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
- <./rsc/binary.png, id=1052, 602.25pt x 602.25pt>
+Package pdftex.def Info: ./rsc/gray_scale.png used on input line 74.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
+ <./rsc/binary.png, id=1461, 602.25pt x 602.25pt>
 File: ./rsc/binary.png Graphic file (type png)
 
 <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[26
+Package pdftex.def Info: ./rsc/binary.png used on input line 74.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
+ [32
 
  <./rsc/40.png (PNG copy)> <./rsc/gray_scale.png (PNG copy)> <./rsc/binary.png 
 (PNG copy)>]
 File: ./rsc/40.png Graphic file (type png)
  <use ./rsc/40.png>
-Package pdftex.def Info: ./rsc/40.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
+Package pdftex.def Info: ./rsc/40.png used on input line 74.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 File: ./rsc/gray_scale.png Graphic file (type png)
- <use ./rsc/gray_scale.png>
-Package pdftex.def Info: ./rsc/gray_scale.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/binary.png Graphic file (type png)
 
-<use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[27
-
-]
-File: ./rsc/40.png Graphic file (type png)
- <use ./rsc/40.png>
-Package pdftex.def Info: ./rsc/40.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/gray_scale.png Graphic file (type png)
- <use ./rsc/gray_scale.png>
-Package pdftex.def Info: ./rsc/gray_scale.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
+<use ./rsc/gray_scale.png>
+Package pdftex.def Info: ./rsc/gray_scale.png used on input line 74.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 File: ./rsc/binary.png Graphic file (type png)
  <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[28
-
-]
-File: ./rsc/40.png Graphic file (type png)
- <use ./rsc/40.png>
-Package pdftex.def Info: ./rsc/40.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/gray_scale.png Graphic file (type png)
- <use ./rsc/gray_scale.png>
-Package pdftex.def Info: ./rsc/gray_scale.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/binary.png Graphic file (type png)
- <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 56.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[29
+Package pdftex.def Info: ./rsc/binary.png used on input line 74.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
+ [33
 
 ]
 File: ./rsc/binary.png Graphic file (type png)
  <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
- <./rsc/angles.png, id=1194, 602.25pt x 602.25pt>
+Package pdftex.def Info: ./rsc/binary.png used on input line 99.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
+
+<./rsc/angles.png, id=1545, 602.25pt x 602.25pt>
 File: ./rsc/angles.png Graphic file (type png)
+ <use ./rsc/angles.png>
+Package pdftex.def Info: ./rsc/angles.png used on input line 99.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 
-<use ./rsc/angles.png>
-Package pdftex.def Info: ./rsc/angles.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
- <./rsc/transform.png, id=1195, 602.25pt x 602.25pt>
+<./rsc/transform.png, id=1546, 602.25pt x 602.25pt>
 File: ./rsc/transform.png Graphic file (type png)
+ <use ./rsc/transform.png>
+Package pdftex.def Info: ./rsc/transform.png used on input line 99.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 
-<use ./rsc/transform.png>
-Package pdftex.def Info: ./rsc/transform.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[30
+[34
 
  <./rsc/angles.png> <./rsc/transform.png (PNG copy)>]
 File: ./rsc/binary.png Graphic file (type png)
 
 <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
+Package pdftex.def Info: ./rsc/binary.png used on input line 99.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 File: ./rsc/angles.png Graphic file (type png)
  <use ./rsc/angles.png>
-Package pdftex.def Info: ./rsc/angles.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
+Package pdftex.def Info: ./rsc/angles.png used on input line 99.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 File: ./rsc/transform.png Graphic file (type png)
  <use ./rsc/transform.png>
-Package pdftex.def Info: ./rsc/transform.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
+Package pdftex.def Info: ./rsc/transform.png used on input line 99.
+(pdftex.def)             Requested size: 82.79834pt x 82.79814pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[31
-
-]
-File: ./rsc/binary.png Graphic file (type png)
- <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/angles.png Graphic file (type png)
- <use ./rsc/angles.png>
-Package pdftex.def Info: ./rsc/angles.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/transform.png Graphic file (type png)
- <use ./rsc/transform.png>
-Package pdftex.def Info: ./rsc/transform.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[32
-
-]
-File: ./rsc/binary.png Graphic file (type png)
- <use ./rsc/binary.png>
-Package pdftex.def Info: ./rsc/binary.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/angles.png Graphic file (type png)
- <use ./rsc/angles.png>
-Package pdftex.def Info: ./rsc/angles.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-File: ./rsc/transform.png Graphic file (type png)
- <use ./rsc/transform.png>
-Package pdftex.def Info: ./rsc/transform.png used on input line 79.
-(pdftex.def)             Requested size: 87.22366pt x 87.21832pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[33
+[35
 
 ]
 File: ./rsc/40.png Graphic file (type png)
  <use ./rsc/40.png>
-Package pdftex.def Info: ./rsc/40.png used on input line 92.
-(pdftex.def)             Requested size: 130.83328pt x 130.83209pt.
- <./rsc/decrypt.png, id=1340, 602.25pt x 602.25pt>
+Package pdftex.def Info: ./rsc/40.png used on input line 112.
+(pdftex.def)             Requested size: 124.1954pt x 124.18802pt.
+ <./rsc/decrypt.png, id=1628, 602.25pt x 602.25pt>
 File: ./rsc/decrypt.png Graphic file (type png)
 
 <use ./rsc/decrypt.png>
-Package pdftex.def Info: ./rsc/decrypt.png used on input line 92.
-(pdftex.def)             Requested size: 130.83328pt x 130.83209pt.
-
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[34
+Package pdftex.def Info: ./rsc/decrypt.png used on input line 112.
+(pdftex.def)             Requested size: 124.1954pt x 124.18802pt.
+ [36
 
  <./rsc/decrypt.png (PNG copy)>]
 File: ./rsc/40.png Graphic file (type png)
  <use ./rsc/40.png>
-Package pdftex.def Info: ./rsc/40.png used on input line 92.
-(pdftex.def)             Requested size: 130.83328pt x 130.83209pt.
+Package pdftex.def Info: ./rsc/40.png used on input line 112.
+(pdftex.def)             Requested size: 124.1954pt x 124.18802pt.
 File: ./rsc/decrypt.png Graphic file (type png)
- <use ./rsc/decrypt.png>
-Package pdftex.def Info: ./rsc/decrypt.png used on input line 92.
-(pdftex.def)             Requested size: 130.83328pt x 130.83209pt.
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+<use ./rsc/decrypt.png>
+Package pdftex.def Info: ./rsc/decrypt.png used on input line 112.
+(pdftex.def)             Requested size: 124.1954pt x 124.18802pt.
+ [37
 
-[35
+] (./slide.toc) [38
 
-] (./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[36
-
-] <./rsc/psnr_ressemblance.png, id=1454, 451.6875pt x 215.30438pt>
+]
+<./rsc/psnr_ressemblance.png, id=1760, 451.6875pt x 215.30438pt>
 File: ./rsc/psnr_ressemblance.png Graphic file (type png)
 
 <use ./rsc/psnr_ressemblance.png>
-Package pdftex.def Info: ./rsc/psnr_ressemblance.png used on input line 99.
-(pdftex.def)             Requested size: 232.59499pt x 110.87149pt.
+Package pdftex.def Info: ./rsc/psnr_ressemblance.png used on input line 120.
+(pdftex.def)             Requested size: 220.79417pt x 105.2471pt.
+ [39
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[37
-
- <./rsc/psnr_ressemblance.png (PNG copy)>]
-<./rsc/psnr_lecture.png, id=1490, 451.6875pt x 338.76563pt>
+ <./rsc/psnr_ressemblance.png (PNG copy)>] <./rsc/psnr_lecture.png, id=1800, 45
+1.6875pt x 338.76563pt>
 File: ./rsc/psnr_lecture.png Graphic file (type png)
 
 <use ./rsc/psnr_lecture.png>
-Package pdftex.def Info: ./rsc/psnr_lecture.png used on input line 104.
-(pdftex.def)             Requested size: 232.59499pt x 174.44814pt.
+Package pdftex.def Info: ./rsc/psnr_lecture.png used on input line 126.
+(pdftex.def)             Requested size: 220.79417pt x 165.59857pt.
+ [40
 
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
+ <./rsc/psnr_lecture.png (PNG copy)>]
+(./slide.toc) [41
 
-[38
+]
+<./rsc/logo_native_script.png, id=1892, 418.56375pt x 361.35pt>
+File: ./rsc/logo_native_script.png Graphic file (type png)
 
- <./rsc/psnr_lecture.png (PNG copy)>])
+<use ./rsc/logo_native_script.png>
+Package pdftex.def Info: ./rsc/logo_native_script.png used on input line 150.
+(pdftex.def)             Requested size: 86.9364pt x 75.04764pt.
+
+<./rsc/logo_android_studio.png, id=1893, 348.30125pt x 140.525pt>
+File: ./rsc/logo_android_studio.png Graphic file (type png)
+
+<use ./rsc/logo_android_studio.png>
+Package pdftex.def Info: ./rsc/logo_android_studio.png used on input line 150.
+(pdftex.def)             Requested size: 99.35669pt x 40.08649pt.
+
+<./rsc/logo_ionic.png, id=1894, 381.425pt x 133.49875pt>
+File: ./rsc/logo_ionic.png Graphic file (type png)
+
+<use ./rsc/logo_ionic.png>
+Package pdftex.def Info: ./rsc/logo_ionic.png used on input line 150.
+(pdftex.def)             Requested size: 111.7751pt x 39.12103pt.
+
+<./rsc/logo_react_native.png, id=1895, 256.96pt x 256.96pt>
+File: ./rsc/logo_react_native.png Graphic file (type png)
+
+<use ./rsc/logo_react_native.png>
+Package pdftex.def Info: ./rsc/logo_react_native.png used on input line 150.
+(pdftex.def)             Requested size: 99.35669pt x 99.35532pt.
+ [42
+
+ <./rsc/logo_native_script.png> <./rsc/logo_android_studio.png> <./rsc/logo_ion
+ic.png> <./rsc/logo_react_native.png>]
+File: ./rsc/logo_ionic.png Graphic file (type png)
+
+<use ./rsc/logo_ionic.png>
+Package pdftex.def Info: ./rsc/logo_ionic.png used on input line 163.
+(pdftex.def)             Requested size: 193.19333pt x 67.61696pt.
+ [43
+
+]
+<./rsc/logo_raspberry.png, id=1979, 200.75pt x 252.945pt>
+File: ./rsc/logo_raspberry.png Graphic file (type png)
+
+<use ./rsc/logo_raspberry.png>
+Package pdftex.def Info: ./rsc/logo_raspberry.png used on input line 179.
+(pdftex.def)             Requested size: 63.75415pt x 80.33037pt.
+File: ./rsc/logo_ionic.png Graphic file (type png)
+ <use ./rsc/logo_ionic.png>
+Package pdftex.def Info: ./rsc/logo_ionic.png used on input line 179.
+(pdftex.def)             Requested size: 91.07776pt x 31.87738pt.
+
+<./rsc/logo_node_js.png, id=1980, 229.85875pt x 220.825pt>
+File: ./rsc/logo_node_js.png Graphic file (type png)
+
+<use ./rsc/logo_node_js.png>
+Package pdftex.def Info: ./rsc/logo_node_js.png used on input line 179.
+(pdftex.def)             Requested size: 72.86247pt x 69.99828pt.
+ [44
+
+ <./rsc/logo_raspberry.png> <./rsc/logo_node_js.png>] <./rsc/appli_1.png, id=20
+22, 1129.21875pt x 2445.135pt>
+File: ./rsc/appli_1.png Graphic file (type png)
+
+<use ./rsc/appli_1.png>
+Package pdftex.def Info: ./rsc/appli_1.png used on input line 195.
+(pdftex.def)             Requested size: 91.07776pt x 197.1818pt.
+
+<./rsc/appli_2.png, id=2023, 1129.21875pt x 2445.135pt>
+File: ./rsc/appli_2.png Graphic file (type png)
+
+<use ./rsc/appli_2.png>
+Package pdftex.def Info: ./rsc/appli_2.png used on input line 195.
+(pdftex.def)             Requested size: 91.07776pt x 197.1818pt.
+
+<./rsc/appli_3.png, id=2024, 1129.21875pt x 2445.135pt>
+File: ./rsc/appli_3.png Graphic file (type png)
+
+<use ./rsc/appli_3.png>
+Package pdftex.def Info: ./rsc/appli_3.png used on input line 195.
+(pdftex.def)             Requested size: 91.07776pt x 197.1818pt.
+ [45
+
+ <./rsc/appli_1.png> <./rsc/appli_2.png> <./rsc/appli_3.png>])
 \openout2 = `./sections/3_gestion.aux'.
 
- (./sections/3_gestion.tex
-(./slide.toc)
-Overfull \hbox (1.67305pt too wide) has occurred while \output is active
- []\T1/cmss/m/n/5 Développement  
- []
-
-[39
+ (./sections/3_gestion.tex (./slide.toc) [46
 
 
 
-])
-\openout2 = `./sections/reference.aux'.
+]
+<./rsc/gant_1_1.png, id=2117, 492.84125pt x 233.87375pt>
+File: ./rsc/gant_1_1.png Graphic file (type png)
 
- (./sections/reference.tex)
+<use ./rsc/gant_1_1.png>
+Package pdftex.def Info: ./rsc/gant_1_1.png used on input line 9.
+(pdftex.def)             Requested size: 220.79417pt x 104.77827pt.
+
+<./rsc/gant_1_2.png, id=2118, 541.02126pt x 227.85126pt>
+File: ./rsc/gant_1_2.png Graphic file (type png)
+
+<use ./rsc/gant_1_2.png>
+Package pdftex.def Info: ./rsc/gant_1_2.png used on input line 9.
+(pdftex.def)             Requested size: 220.79417pt x 92.98502pt.
+ [47
+
+ <./rsc/gant_1_1.png (PNG copy)> <./rsc/gant_1_2.png (PNG copy)>] <./rsc/gant_2
+.png, id=2157, 602.25pt x 333.245pt>
+File: ./rsc/gant_2.png Graphic file (type png)
+
+<use ./rsc/gant_2.png>
+Package pdftex.def Info: ./rsc/gant_2.png used on input line 14.
+(pdftex.def)             Requested size: 275.99168pt x 152.71996pt.
+ [48
+
+ <./rsc/gant_2.png (PNG copy)>] (./slide.toc)
+[49
+
+] <./rsc/commit.png, id=2251, 602.25pt x 356.33125pt>
+File: ./rsc/commit.png Graphic file (type png)
+
+<use ./rsc/commit.png>
+Package pdftex.def Info: ./rsc/commit.png used on input line 28.
+(pdftex.def)             Requested size: 220.79417pt x 130.63887pt.
+ [50
+
+ <./rsc/commit.png (PNG copy)>]
+<./rsc/lignes_code.png, id=2290, 918.43124pt x 432.61626pt>
+File: ./rsc/lignes_code.png Graphic file (type png)
+
+<use ./rsc/lignes_code.png>
+Package pdftex.def Info: ./rsc/lignes_code.png used on input line 33.
+(pdftex.def)             Requested size: 275.99168pt x 130.00371pt.
+ [51
+
+ <./rsc/lignes_code.png>] (./slide.toc) [52
+
+]
+<./rsc/risque.png, id=2382, 608.2725pt x 226.8475pt>
+File: ./rsc/risque.png Graphic file (type png)
+ <use ./rsc/risque.png>
+Package pdftex.def Info: ./rsc/risque.png used on input line 40.
+(pdftex.def)             Requested size: 275.99168pt x 102.92847pt.
+
+[53
+
+ <./rsc/risque.png (PNG copy)>] (./slide.toc) [54
+
+] [55
+
+] [56
+
+]) [57
+
+
+]
 \tf@nav=\write6
 \openout6 = `slide.nav'.
 
@@ -2011,39 +2030,52 @@ Overfull \hbox (1.67305pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `slide.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
- (./slide.aux (./sections/1_introduction.aux)
-(./sections/2_developpement.aux) (./sections/3_gestion.aux)
-(./sections/reference.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+
+(./slide.aux (./sections/1_introduction.aux) (./sections/2_developpement.aux)
+(./sections/3_gestion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `slide.out' has not changed.
-(rerunfilecheck)             Checksum: ED942743F2F8F43138B786281591A902;591.
+(rerunfilecheck)             Checksum: 21E9417C6546156431F54D2A23578772;867.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 19897 strings out of 493029
- 373018 string characters out of 6136234
- 453388 words of memory out of 5000000
- 22834 multiletter control sequences out of 15000+600000
- 11271 words of font info for 33 fonts, out of 8000000 for 9000
+ 20401 strings out of 493029
+ 380066 string characters out of 6136234
+ 459325 words of memory out of 5000000
+ 23260 multiletter control sequences out of 15000+600000
+ 13229 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,70p,385b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfss1440.pfb>
-Output written on slide.pdf (39 pages, 1940993 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfss1728.pfb>
+Output written on slide.pdf (57 pages, 4646681 bytes).
 PDF statistics:
- 1612 PDF objects out of 1728 (max. 8388607)
- 1507 compressed objects within 16 object streams
- 88 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2687 PDF objects out of 2984 (max. 8388607)
+ 2505 compressed objects within 26 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
